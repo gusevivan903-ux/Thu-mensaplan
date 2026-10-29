@@ -1,0 +1,114 @@
+name: Mensa-Daten holen & Seite veröffentlichen
+
+on:
+  schedule:
+    # Morgens Daten holen: 05:35 UTC (= 06:35 Uhr Winterzeit / 07:35 Uhr Sommerzeit)
+    - cron: "35 5 * * 1-5"
+    # Mittags-Push: zwei Termine, das Skript sendet nur den, der in Berlin zwischen 11:00 und 11:59 liegt
+    # 09:20 UTC = 11:20 Uhr Sommerzeit · 10:20 UTC = 11:20 Uhr Winterzeit
+    - cron: "20 9 * * 1-5"
+    - cron: "20 10 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      test_push:
+        description: "Test-Push jetzt sofort aufs Handy schicken"
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mensa
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Erstinstallation – hochgeladene ZIP auspacken
+        run: |
+          if [ -f thu-mensa.zip ]; then
+            unzip -o -q thu-mensa.zip -d .
+            git rm -q thu-mensa.zip
+            git config user.name "mensa-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "Projektdateien aus ZIP ausgepackt"
+            git push origin HEAD
+            echo "ZIP ausgepackt ✔"
+          else
+            echo "Keine ZIP vorhanden – alles schon eingerichtet."
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Abhängigkeiten installieren
+        run: pip install -r scraper/requirements.txt
+
+      - name: Parser-Selbsttest
+        run: python scraper/test_parser.py
+
+      - name: Speiseplan abrufen
+        id: scrape
+        continue-on-error: true   # wenn die Mensa-Seite spinnt, bleibt die alte Datei online
+        run: python scraper/fetch_mensa.py --out docs/data/mensa.json --debug-dir debug
+
+      - name: Roh-HTML zum Debuggen sichern
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug-html
+          path: debug/
+          retention-days: 7
+          if-no-files-found: ignore
+
+      - name: Neue Daten ins Repo committen
+        if: steps.scrape.outcome == 'success'
+        run: |
+          git config user.name "mensa-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data/mensa.json
+          if git diff --cached --quiet; then
+            echo "Keine Änderungen am Speiseplan."
+          else
+            git commit -m "Speiseplan aktualisiert ($(date +%F))"
+            git push origin HEAD
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
+
+      - name: Mittags-Push aufs Handy
+        if: github.event_name == 'schedule' || inputs.test_push
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          MENSA_STANDORT: ${{ vars.MENSA_STANDORT }}
+          MENSA_PRESET: ${{ vars.MENSA_PRESET }}
+          MENSA_ERNAEHRUNG: ${{ vars.MENSA_ERNAEHRUNG }}
+          MENSA_PREISGRUPPE: ${{ vars.MENSA_PREISGRUPPE }}
+          PAGES_URL: ${{ steps.deploy.outputs.page_url }}
+        run: |
+          if [ "${{ inputs.test_push }}" = "true" ]; then
+            python scraper/notify.py --force
+          else
+            python scraper/notify.py
+          fi
