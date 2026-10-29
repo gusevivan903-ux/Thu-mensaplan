@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mensa-Ranking THU</title>
+<meta name="description" content="Welches Mensa-Essen an der THU lohnt sich heute am meisten? Ranking nach Preis, Protein und Nährwerten.">
+<meta name="theme-color" content="#0f766e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+  :root {
+    --bg: #f6f5f1;
+    --surface: #ffffff;
+    --surface-2: #efede6;
+    --text: #1c1b18;
+    --muted: #6b6860;
+    --line: #e2dfd6;
+    --accent: #0f766e;
+    --accent-soft: #d6efec;
+    --gold: #b7791f;
+    --gold-soft: #fbefd5;
+    --bar-price: #2563eb;
+    --bar-protein: #c2410c;
+    --bar-nutri: #15803d;
+    --warn: #9a3412;
+    --radius: 16px;
+    --shadow: 0 1px 2px rgba(0,0,0,.05), 0 4px 16px rgba(0,0,0,.05);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12130f; --surface: #1c1d19; --surface-2: #262722; --text: #ecebe6; --muted: #a3a197;
+      --line: #33342e; --accent: #2dd4bf; --accent-soft: #123b37; --gold: #f2b950; --gold-soft: #3a2e16;
+      --bar-price: #60a5fa; --bar-protein: #fb923c; --bar-nutri: #4ade80; --warn: #fdba74;
+      --shadow: 0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12130f; --surface: #1c1d19; --surface-2: #262722; --text: #ecebe6; --muted: #a3a197;
+    --line: #33342e; --accent: #2dd4bf; --accent-soft: #123b37; --gold: #f2b950; --gold-soft: #3a2e16;
+    --bar-price: #60a5fa; --bar-protein: #fb923c; --bar-nutri: #4ade80; --warn: #fdba74;
+    --shadow: 0 1px 2px rgba(0,0,0,.4);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 16px 16px 48px; }
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; margin: 8px 0 16px; }
+  h1 { font-size: 1.55rem; line-height: 1.15; margin: 0; letter-spacing: -.02em; }
+  h1 span { color: var(--accent); }
+  .stand { font-size: .78rem; color: var(--muted); text-align: right; white-space: nowrap; }
+  .banner { background: var(--gold-soft); color: var(--text); border-radius: 12px; padding: 10px 12px; font-size: .88rem; margin-bottom: 14px; }
+
+  .seg { display: flex; background: var(--surface-2); border-radius: 12px; padding: 4px; gap: 4px; margin-bottom: 12px; }
+  .seg button { flex: 1; border: 0; background: transparent; color: var(--muted); font: inherit; font-size: .9rem; font-weight: 600; padding: 9px 8px; border-radius: 9px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+
+  .days { display: flex; gap: 8px; overflow-x: auto; padding: 2px 0 10px; scrollbar-width: none; }
+  .days::-webkit-scrollbar { display: none; }
+  .day { flex: 0 0 auto; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 12px; padding: 7px 12px; font: inherit; font-size: .85rem; cursor: pointer; text-align: center; min-width: 62px; }
+  .day b { display: block; font-size: .95rem; }
+  .day small { color: var(--muted); }
+  .day[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .day[aria-pressed="true"] small { color: rgba(255,255,255,.85); }
+  :root[data-theme="dark"] .day[aria-pressed="true"], :root[data-theme="dark"] .day[aria-pressed="true"] small { color: #05201d; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .day[aria-pressed="true"], :root:not([data-theme="light"]) .day[aria-pressed="true"] small { color: #05201d; } }
+  .day.today:not([aria-pressed="true"]) { border-color: var(--accent); }
+
+  .winner { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 18px; margin: 6px 0 14px; border: 2px solid var(--gold); position: relative; }
+  .crown { display: inline-flex; align-items: center; gap: 6px; background: var(--gold-soft); color: var(--gold); font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; padding: 4px 10px; border-radius: 99px; }
+  .winner h2 { font-size: 1.3rem; line-height: 1.25; margin: 10px 0 4px; letter-spacing: -.01em; }
+  .meta { color: var(--muted); font-size: .85rem; }
+  .bigstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 14px 0 10px; }
+  .bigstats div { background: var(--surface-2); border-radius: 10px; padding: 8px 6px; text-align: center; }
+  .bigstats b { display: block; font-size: 1.05rem; font-variant-numeric: tabular-nums; }
+  .bigstats span { font-size: .7rem; color: var(--muted); }
+  .reasons { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .reason { font-size: .78rem; background: var(--accent-soft); color: var(--accent); padding: 3px 9px; border-radius: 99px; font-weight: 600; }
+  .score-big { position: absolute; top: 16px; right: 16px; text-align: right; }
+  .score-big b { font-size: 1.6rem; color: var(--gold); font-variant-numeric: tabular-nums; line-height: 1; }
+  .score-big span { display: block; font-size: .68rem; color: var(--muted); }
+
+  details.settings { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); margin-bottom: 14px; }
+  details.settings summary { cursor: pointer; padding: 13px 16px; font-weight: 600; font-size: .95rem; list-style: none; display: flex; justify-content: space-between; }
+  details.settings summary::-webkit-details-marker { display: none; }
+  details.settings summary::after { content: "▾"; color: var(--muted); transition: transform .2s; }
+  details[open].settings summary::after { transform: rotate(180deg); }
+  .set-body { padding: 0 16px 16px; display: grid; gap: 14px; }
+  .slider label { display: flex; justify-content: space-between; font-size: .88rem; margin-bottom: 4px; }
+  .slider label b { font-variant-numeric: tabular-nums; }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  .row-ctl { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .row-ctl > span { font-size: .85rem; color: var(--muted); min-width: 70px; }
+  .chip { border: 1px solid var(--line); background: var(--surface-2); color: var(--text); border-radius: 99px; padding: 6px 12px; font: inherit; font-size: .83rem; cursor: pointer; }
+  .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+  :root[data-theme="dark"] .chip[aria-pressed="true"] { color: #05201d; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .chip[aria-pressed="true"] { color: #05201d; } }
+  .presets { display: flex; gap: 6px; flex-wrap: wrap; }
+
+  .list { display: grid; gap: 10px; }
+  .card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 14px 14px 12px; display: grid; grid-template-columns: 34px 1fr auto; gap: 4px 10px; align-items: start; }
+  .rank { font-weight: 800; font-size: 1.1rem; color: var(--muted); padding-top: 1px; font-variant-numeric: tabular-nums; }
+  .card h3 { font-size: 1rem; margin: 0 0 2px; line-height: 1.3; }
+  .score { font-weight: 800; font-size: 1.15rem; font-variant-numeric: tabular-nums; text-align: right; }
+  .score small { display: block; font-size: .65rem; color: var(--muted); font-weight: 500; }
+  .bars { grid-column: 2 / 4; display: grid; gap: 4px; margin-top: 8px; }
+  .bar { display: grid; grid-template-columns: 62px 1fr 30px; align-items: center; gap: 8px; font-size: .72rem; color: var(--muted); }
+  .track { height: 6px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+  .fill { height: 100%; border-radius: 99px; }
+  .bar .v { text-align: right; font-variant-numeric: tabular-nums; }
+  .nums { grid-column: 2 / 4; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .8rem; color: var(--muted); margin-top: 8px; font-variant-numeric: tabular-nums; }
+  .nums b { color: var(--text); font-weight: 600; }
+  .tag { display: inline-block; font-size: .7rem; padding: 1px 7px; border-radius: 99px; background: var(--surface-2); color: var(--muted); margin-right: 4px; }
+  .tag.veg { background: #dcfce7; color: #166534; }
+  .tag.warn { background: transparent; color: var(--warn); border: 1px solid currentColor; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag.veg { background: #14351f; color: #86efac; } }
+  :root[data-theme="dark"] .tag.veg { background: #14351f; color: #86efac; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 16px; background: var(--surface); border-radius: var(--radius); }
+  footer { margin-top: 28px; font-size: .8rem; color: var(--muted); line-height: 1.55; }
+  footer h4 { color: var(--text); font-size: .88rem; margin: 18px 0 4px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 420px) {
+    .bigstats { grid-template-columns: repeat(2, 1fr); }
+    .score-big { position: static; text-align: left; margin-top: 6px; }
+    .score-big span { display: inline; margin-left: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Mensa-Ranking <span>THU</span></h1>
+    <div class="stand" id="stand"></div>
+  </header>
+
+  <div id="banner"></div>
+
+  <div class="seg" id="locSeg" role="group" aria-label="Standort"></div>
+  <div class="days" id="days" role="group" aria-label="Tag"></div>
+
+  <div id="winner"></div>
+
+  <details class="settings" id="settings">
+    <summary>Gewichtung &amp; Filter</summary>
+    <div class="set-body">
+      <div class="presets" id="presets"></div>
+      <div class="slider"><label for="wPrice">💶 Preis <b id="wPriceV"></b></label><input type="range" id="wPrice" min="0" max="100" step="5"></div>
+      <div class="slider"><label for="wProtein">💪 Protein <b id="wProteinV"></b></label><input type="range" id="wProtein" min="0" max="100" step="5"></div>
+      <div class="slider"><label for="wNutri">🥗 Nährwerte <b id="wNutriV"></b></label><input type="range" id="wNutri" min="0" max="100" step="5"></div>
+      <div class="row-ctl"><span>Preis für</span><div id="groupChips" class="row-ctl"></div></div>
+      <div class="row-ctl"><span>Ernährung</span><div id="dietChips" class="row-ctl"></div></div>
+    </div>
+  </details>
+
+  <div class="list" id="list"></div>
+
+  <footer>
+    <h4>So wird bewertet</h4>
+    <b>Preis:</b> Das günstigste Gericht des Tages bekommt 100, ein doppelt so teures 50 usw.<br>
+    <b>Protein:</b> Das Gericht mit dem meisten Eiweiß bekommt 100, die anderen anteilig.<br>
+    <b>Nährwerte:</b> Kalorien im sinnvollen Mittagsbereich (450–850 kcal), wenig gesättigte Fette, wenig Zucker und wenig Salz geben Punkte.<br>
+    Der Gesamtscore ist der gewichtete Mittelwert. Fehlen bei einem Gericht die Nährwerte, zählen Protein und Nährwerte neutral mit 50.
+    <h4>Hinweise</h4>
+    Daten vom offiziellen Speiseplan des Studierendenwerks Ulm, automatisch abgerufen. Laut Studierendenwerk können die Salzwerte systembedingt höher angegeben sein als real. Keine Gewähr, im Zweifel gilt der <a id="offLink" href="https://sw-ulm-spl51.maxmanager.xyz/index.php?locationId=3" target="_blank" rel="noopener">offizielle Speiseplan</a>. Privates Projekt, nicht vom Studierendenwerk.
+  </footer>
+</div>
+
+<script id="embedded-data" type="application/json">/*EMBEDDED_DATA*/</script>
+<script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const fmtEur = (v) => v == null ? "–" : v.toFixed(2).replace(".", ",") + " €";
+  const fmt = (v, d = 0) => v == null ? "–" : v.toFixed(d).replace(".", ",");
+  const WD = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
+  const PRESETS = [
+    { id: "ausgewogen", label: "Ausgewogen", w: [35, 40, 25] },
+    { id: "gym", label: "💪 Gym-Modus", w: [15, 70, 15] },
+    { id: "pleite", label: "💸 Monatsende", w: [70, 20, 10] },
+    { id: "gesund", label: "🥗 Gesund", w: [15, 30, 55] },
+  ];
+  const GROUPS = [["student", "Studis"], ["staff", "Bedienstete"], ["guest", "Gäste"]];
+  const DIETS = [["all", "Alle"], ["vegetarisch", "Vegetarisch"], ["vegan", "Vegan"]];
+
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem("mensa." + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+    set(k, v) { try { localStorage.setItem("mensa." + k, JSON.stringify(v)); } catch {} },
+  };
+
+  const state = {
+    data: null,
+    loc: store.get("loc", "prittwitz"),
+    date: null,
+    w: store.get("w", PRESETS[0].w),
+    group: store.get("group", "student"),
+    diet: store.get("diet", "all"),
+  };
+
+  // ---------- Bewertung
+  const clamp01 = (x) => Math.max(0, Math.min(1, x));
+  const lin = (v, good, bad) => clamp01((bad - v) / (bad - good)); // good<bad: kleiner ist besser
+
+  function nutriScore(n) {
+    if (!n) return null;
+    const parts = [];
+    if (n.kcal != null) {
+      const k = n.kcal;
+      parts.push(k >= 450 && k <= 850 ? 1 : k < 450 ? clamp01((k - 250) / 200) : clamp01((1200 - k) / 350));
+    }
+    if (n.satFat != null) parts.push(lin(n.satFat, 5, 15));
+    if (n.sugar != null) parts.push(lin(n.sugar, 10, 30));
+    if (n.salt != null) parts.push(lin(n.salt, 2, 5));
+    return parts.length ? parts.reduce((a, b) => a + b, 0) / parts.length : null;
+  }
+
+  const priceOf = (it) => {
+    const p = it.prices || {};
+    return p[state.group] ?? (state.group === "staff" ? p.student : null) ?? null;
+  };
+
+  function rank(items) {
+    const prices = items.map(priceOf).filter((p) => p > 0);
+    const minP = prices.length ? Math.min(...prices) : null;
+    const prots = items.map((i) => i.nutrition?.protein).filter((p) => p > 0);
+    const maxPr = prots.length ? Math.max(...prots) : null;
+    const [wp, wpr, wn] = state.w;
+    const wsum = wp + wpr + wn || 1;
+
+    return items.map((it) => {
+      const price = priceOf(it);
+      const prot = it.nutrition?.protein ?? null;
+      const s = {
+        price: price > 0 && minP ? minP / price : null,
+        protein: prot != null && maxPr ? prot / maxPr : null,
+        nutri: nutriScore(it.nutrition),
+      };
+      const total = (wp * (s.price ?? 0.5) + wpr * (s.protein ?? 0.5) + wn * (s.nutri ?? 0.5)) / wsum;
+      return { it, price, s, total, incomplete: s.protein == null || s.nutri == null };
+    }).sort((a, b) => b.total - a.total || (a.price ?? 99) - (b.price ?? 99));
+  }
+
+  // ---------- Rendering
+  const isVeg = (it) => it.tags?.includes("vegetarisch") || it.tags?.includes("vegan");
+  const tagsHtml = (it, r) => {
+    const t = [];
+    if (it.tags?.includes("vegan")) t.push('<span class="tag veg">vegan</span>');
+    else if (it.tags?.includes("vegetarisch")) t.push('<span class="tag veg">vegetarisch</span>');
+    (it.tags || []).filter((x) => !["vegan", "vegetarisch", "bio"].includes(x)).forEach((x) => t.push(`<span class="tag">${esc(x)}</span>`));
+    if (it.tags?.includes("bio")) t.push('<span class="tag">bio</span>');
+    if (r.incomplete) t.push('<span class="tag warn">keine Nährwerte</span>');
+    return t.join("");
+  };
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const pct = (x) => x == null ? "–" : Math.round(x * 100);
+
+  function bar(label, val, color) {
+    return `<div class="bar"><span>${label}</span><div class="track"><div class="fill" style="width:${val == null ? 0 : Math.round(val * 100)}%;background:${color}"></div></div><span class="v">${pct(val)}</span></div>`;
+  }
+
+  function renderLocs() {
+    $("locSeg").innerHTML = state.data.locations.map((l) =>
+      `<button type="button" data-loc="${l.key}" aria-pressed="${l.key === state.loc}">${esc(l.name.replace("THU ", ""))}</button>`).join("");
+  }
+
+  function currentLoc() {
+    return state.data.locations.find((l) => l.key === state.loc) || state.data.locations[0];
+  }
+
+  function pickDefaultDate(loc) {
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const iso = (d) => d.toISOString().slice(0, 10);
+    const withFood = loc.days.filter((d) => d.items.length);
+    const dates = (withFood.length ? withFood : loc.days).map((d) => d.date).sort();
+    const t = new Date(today.getTime() - today.getTimezoneOffset() * 60000);
+    return dates.find((d) => d >= iso(t)) || dates[dates.length - 1] || null;
+  }
+
+  function renderDays(loc) {
+    const todayIso = new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    $("days").innerHTML = loc.days.map((d) => {
+      const dt = new Date(d.date + "T12:00:00");
+      const label = d.date === todayIso ? "Heute" : WD[dt.getDay()];
+      return `<button type="button" class="day${d.date === todayIso ? " today" : ""}" data-date="${d.date}" aria-pressed="${d.date === state.date}"><b>${label}</b><small>${dt.getDate()}.${dt.getMonth() + 1}.</small></button>`;
+    }).join("");
+    const active = $("days").querySelector('[aria-pressed="true"]');
+    if (active) active.scrollIntoView({ inline: "center", block: "nearest" });
+  }
+
+  function reasonsFor(r, ranked) {
+    const out = [];
+    const best = (key) => ranked.every((x) => (x.s[key] ?? -1) <= (r.s[key] ?? -1));
+    if (r.s.price != null && best("price")) out.push("günstigstes Gericht");
+    if (r.s.protein != null && best("protein")) out.push("meistes Protein");
+    if (r.s.nutri != null && best("nutri")) out.push("beste Nährwerte");
+    const ppe = (x) => x.it.nutrition?.protein && x.price ? x.it.nutrition.protein / x.price : null;
+    if (ppe(r) != null && ranked.every((x) => (ppe(x) ?? -1) <= ppe(r))) out.push("bestes Protein pro €");
+    if (!out.length) out.push("bester Kompromiss");
+    return out;
+  }
+
+  function renderMain() {
+    const loc = currentLoc();
+    $("offLink").href = `https://sw-ulm-spl51.maxmanager.xyz/index.php?locationId=${loc.id}`;
+    const day = loc.days.find((d) => d.date === state.date);
+    let items = day ? day.items.slice() : [];
+    if (state.diet !== "all") items = items.filter((i) => state.diet === "vegan" ? i.tags?.includes("vegan") : isVeg(i));
+
+    if (!items.length) {
+      $("winner").innerHTML = "";
+      $("list").innerHTML = `<div class="empty">${day && day.items.length ? "Kein Gericht passt zum Filter." : "Für diesen Tag gibt's (noch) keinen Speiseplan.<br>Evtl. geschlossen oder noch nicht veröffentlicht."}</div>`;
+      return;
+    }
+
+    const ranked = rank(items);
+    const top = ranked[0];
+    const n = top.it.nutrition || {};
+    const ppe = n.protein && top.price ? n.protein / top.price : null;
+    $("winner").innerHTML = `
+      <section class="winner" aria-label="Tagessieger">
+        <span class="crown">🏆 Tagessieger</span>
+        <div class="score-big"><b>${pct(top.total)}</b><span>von 100</span></div>
+        <h2>${esc(top.it.name)}</h2>
+        <div class="meta">${esc(top.it.category)} ${tagsHtml(top.it, top)}</div>
+        <div class="bigstats">
+          <div><b>${fmtEur(top.price)}</b><span>Preis</span></div>
+          <div><b>${fmt(n.protein, 1)} g</b><span>Protein</span></div>
+          <div><b>${fmt(n.kcal)}</b><span>kcal</span></div>
+          <div><b>${ppe == null ? "–" : fmt(ppe, 1) + " g"}</b><span>Protein / €</span></div>
+        </div>
+        <div class="reasons">${reasonsFor(top, ranked).map((x) => `<span class="reason">${x}</span>`).join("")}</div>
+      </section>`;
+
+    $("list").innerHTML = ranked.map((r, i) => {
+      const n = r.it.nutrition || {};
+      const ppe = n.protein && r.price ? n.protein / r.price : null;
+      return `<article class="card">
+        <div class="rank">${i + 1}</div>
+        <div><h3>${esc(r.it.name)}</h3><div class="meta">${esc(r.it.category)} ${tagsHtml(r.it, r)}</div></div>
+        <div class="score">${pct(r.total)}<small>Score</small></div>
+        <div class="bars">
+          ${bar("Preis", r.s.price, "var(--bar-price)")}
+          ${bar("Protein", r.s.protein, "var(--bar-protein)")}
+          ${bar("Nährwerte", r.s.nutri, "var(--bar-nutri)")}
+        </div>
+        <div class="nums">
+          <span><b>${fmtEur(r.price)}</b></span>
+          <span><b>${fmt(n.protein, 1)}</b> g Protein</span>
+          <span><b>${fmt(n.kcal)}</b> kcal</span>
+          <span><b>${ppe == null ? "–" : fmt(ppe, 1)}</b> g Protein/€</span>
+          ${n.fat != null ? `<span>Fett ${fmt(n.fat, 1)} g${n.satFat != null ? ` (ges. ${fmt(n.satFat, 1)})` : ""}</span>` : ""}
+          ${n.carbs != null ? `<span>KH ${fmt(n.carbs, 1)} g${n.sugar != null ? ` (Zucker ${fmt(n.sugar, 1)})` : ""}</span>` : ""}
+          ${n.salt != null ? `<span>Salz ${fmt(n.salt, 1)} g</span>` : ""}
+        </div>
+      </article>`;
+    }).join("");
+  }
+
+  function renderSettings() {
+    const [a, b, c] = state.w, sum = a + b + c || 1;
+    $("wPrice").value = a; $("wProtein").value = b; $("wNutri").value = c;
+    $("wPriceV").textContent = Math.round(a / sum * 100) + " %";
+    $("wProteinV").textContent = Math.round(b / sum * 100) + " %";
+    $("wNutriV").textContent = Math.round(c / sum * 100) + " %";
+    $("presets").innerHTML = PRESETS.map((p) =>
+      `<button type="button" class="chip" data-preset="${p.id}" aria-pressed="${p.w.join() === state.w.join()}">${p.label}</button>`).join("");
+    $("groupChips").innerHTML = GROUPS.map(([k, l]) =>
+      `<button type="button" class="chip" data-group="${k}" aria-pressed="${k === state.group}">${l}</button>`).join("");
+    $("dietChips").innerHTML = DIETS.map(([k, l]) =>
+      `<button type="button" class="chip" data-diet="${k}" aria-pressed="${k === state.diet}">${l}</button>`).join("");
+  }
+
+  function renderAll() {
+    const loc = currentLoc();
+    state.loc = loc.key;
+    if (!state.date || !loc.days.some((d) => d.date === state.date)) state.date = pickDefaultDate(loc);
+    renderLocs(); renderDays(loc); renderSettings(); renderMain();
+  }
+
+  // ---------- Events
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.loc) { state.loc = b.dataset.loc; store.set("loc", state.loc); state.date = null; renderAll(); }
+    else if (b.dataset.date) { state.date = b.dataset.date; renderDays(currentLoc()); renderMain(); }
+    else if (b.dataset.preset) { state.w = PRESETS.find((p) => p.id === b.dataset.preset).w.slice(); store.set("w", state.w); renderSettings(); renderMain(); }
+    else if (b.dataset.group) { state.group = b.dataset.group; store.set("group", state.group); renderSettings(); renderMain(); }
+    else if (b.dataset.diet) { state.diet = b.dataset.diet; store.set("diet", state.diet); renderSettings(); renderMain(); }
+  });
+  ["wPrice", "wProtein", "wNutri"].forEach((id, i) => $(id).addEventListener("input", (e) => {
+    state.w[i] = +e.target.value; store.set("w", state.w); renderSettings(); renderMain();
+  }));
+
+  // ---------- Daten laden
+  function start(data) {
+    state.data = data;
+    const g = new Date(data.generated);
+    $("stand").innerHTML = `Stand<br>${g.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit" })}, ${g.toLocaleTimeString("de-DE", { hour: "2-digit", minute: "2-digit" })} Uhr`;
+    if (data.demo) $("banner").innerHTML = '<div class="banner">⚠️ <b>Demo-Daten:</b> Das sind Beispielgerichte. Sobald die GitHub Action einmal gelaufen ist, siehst du hier den echten Speiseplan.</div>';
+    renderAll();
+  }
+  function fallback() {
+    try {
+      const raw = $("embedded-data").textContent.trim();
+      if (raw && !raw.startsWith("/*")) return start(JSON.parse(raw));
+    } catch {}
+    $("list").innerHTML = '<div class="empty">Daten konnten nicht geladen werden.</div>';
+  }
+  if ("serviceWorker" in navigator && (location.protocol === "https:" || location.hostname === "localhost")) {
+    navigator.serviceWorker.register("sw.js").catch(() => {});
+  }
+  fetch("data/mensa.json?t=" + Date.now(), { cache: "no-store" })
+    .then((r) => r.ok ? r.json() : Promise.reject())
+    .then((d) => (d && d.locations ? start(d) : fallback()))
+    .catch(fallback);
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,839 @@
+{
+ "generated": "2026-10-19T05:30:00+00:00",
+ "demo": true,
+ "locations": [
+  {
+   "id": 3,
+   "key": "prittwitz",
+   "name": "THU Prittwitzstraße",
+   "days": [
+    {
+     "date": "2026-10-19",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Farfalle-Spinat-Pfanne mit Kirschtomaten in Käsesahne",
+       "info": "",
+       "prices": {
+        "student": 3.9,
+        "staff": 6.0,
+        "guest": 7.41
+       },
+       "nutrition": {
+        "kcal": 648,
+        "protein": 21.4,
+        "fat": 24.1,
+        "satFat": 11.3,
+        "carbs": 82,
+        "sugar": 9.6,
+        "salt": 3.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Fleisch und Fisch",
+       "name": "Hähnchenbrust mit Kräuterreis und Paprikagemüse",
+       "info": "",
+       "prices": {
+        "student": 4.8,
+        "staff": 6.9,
+        "guest": 9.12
+       },
+       "nutrition": {
+        "kcal": 585,
+        "protein": 42.8,
+        "fat": 15.2,
+        "satFat": 3.9,
+        "carbs": 66.5,
+        "sugar": 6.1,
+        "salt": 2.4
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Tofu-Curry mit Basmatireis",
+       "info": "",
+       "prices": {
+        "student": 4.1,
+        "staff": 6.2,
+        "guest": 7.79
+       },
+       "nutrition": {
+        "kcal": 612,
+        "protein": 24.5,
+        "fat": 18.0,
+        "satFat": 4.2,
+        "carbs": 84,
+        "sugar": 11.2,
+        "salt": 2.9
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Currywurst mit Pommes",
+       "info": "",
+       "prices": {
+        "student": 3.5,
+        "staff": 5.6,
+        "guest": 6.65
+       },
+       "nutrition": {
+        "kcal": 1010,
+        "protein": 28.0,
+        "fat": 58.0,
+        "satFat": 19.5,
+        "carbs": 88,
+        "sugar": 14.0,
+        "salt": 5.1
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Linsen-Dal mit Fladenbrot",
+       "info": "",
+       "prices": {
+        "student": 3.2,
+        "staff": 5.3,
+        "guest": 6.08
+       },
+       "nutrition": {
+        "kcal": 560,
+        "protein": 26.0,
+        "fat": 12.5,
+        "satFat": 2.1,
+        "carbs": 82,
+        "sugar": 8.0,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Fleisch und Fisch",
+       "name": "Seelachsfilet mit Kartoffelpüree und Erbsen",
+       "info": "",
+       "prices": {
+        "student": 4.6,
+        "staff": 6.7,
+        "guest": 8.74
+       },
+       "nutrition": {
+        "kcal": 540,
+        "protein": 36.5,
+        "fat": 17.8,
+        "satFat": 7.4,
+        "carbs": 55,
+        "sugar": 5.5,
+        "salt": 2.8
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Gemüse-Lasagne",
+       "info": "",
+       "prices": {
+        "student": 3.9,
+        "staff": 6.0,
+        "guest": 7.41
+       },
+       "nutrition": {
+        "kcal": 720,
+        "protein": 25.0,
+        "fat": 32.0,
+        "satFat": 16.0,
+        "carbs": 78,
+        "sugar": 12.0,
+        "salt": 3.4
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Spätzle-Gemüse-Pfanne mit Käse",
+       "info": "",
+       "prices": {
+        "student": 3.4,
+        "staff": 5.5,
+        "guest": 6.46
+       },
+       "nutrition": {
+        "kcal": 810,
+        "protein": 27.5,
+        "fat": 34.0,
+        "satFat": 17.5,
+        "carbs": 96,
+        "sugar": 7.5,
+        "salt": 3.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Chili sin Carne mit Reis",
+       "info": "",
+       "prices": {
+        "student": 3.3,
+        "staff": 5.4,
+        "guest": 6.27
+       },
+       "nutrition": {
+        "kcal": 590,
+        "protein": 22.0,
+        "fat": 9.5,
+        "satFat": 1.4,
+        "carbs": 98,
+        "sugar": 10.0,
+        "salt": 2.7
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Fleisch und Fisch",
+       "name": "Putengeschnetzeltes mit Bandnudeln",
+       "info": "",
+       "prices": {
+        "student": 4.7,
+        "staff": 6.8,
+        "guest": 8.93
+       },
+       "nutrition": {
+        "kcal": 690,
+        "protein": 45.0,
+        "fat": 20.0,
+        "satFat": 8.0,
+        "carbs": 74,
+        "sugar": 6.0,
+        "salt": 2.9
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Falafel-Bowl mit Hummus",
+       "info": "",
+       "prices": {
+        "student": 4.2,
+        "staff": 6.3,
+        "guest": 7.98
+       },
+       "nutrition": {
+        "kcal": 680,
+        "protein": 21.0,
+        "fat": 30.0,
+        "satFat": 4.0,
+        "carbs": 78,
+        "sugar": 9.0,
+        "salt": 3.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Schnitzel Wiener Art mit Pommes",
+       "info": "",
+       "prices": {
+        "student": 4.1,
+        "staff": 6.2,
+        "guest": 7.79
+       },
+       "nutrition": {
+        "kcal": 980,
+        "protein": 38.0,
+        "fat": 52.0,
+        "satFat": 12.0,
+        "carbs": 86,
+        "sugar": 2.0,
+        "salt": 3.9
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Maultaschen in Brühe",
+       "info": "",
+       "prices": {
+        "student": 3.2,
+        "staff": 5.3,
+        "guest": 6.08
+       },
+       "nutrition": {
+        "kcal": 480,
+        "protein": 19.0,
+        "fat": 16.0,
+        "satFat": 6.5,
+        "carbs": 60,
+        "sugar": 3.0,
+        "salt": 4.2
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Fleisch und Fisch",
+       "name": "Rindergulasch mit Salzkartoffeln",
+       "info": "",
+       "prices": {
+        "student": 5.1,
+        "staff": 7.2,
+        "guest": 9.69
+       },
+       "nutrition": {
+        "kcal": 640,
+        "protein": 40.0,
+        "fat": 22.0,
+        "satFat": 9.0,
+        "carbs": 62,
+        "sugar": 5.0,
+        "salt": 3.1
+       },
+       "tags": [
+        "Rind"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Ofengemüse mit Kichererbsen und Joghurtdip",
+       "info": "",
+       "prices": {
+        "student": 3.8,
+        "staff": 5.9,
+        "guest": 7.22
+       },
+       "nutrition": {
+        "kcal": 530,
+        "protein": 19.5,
+        "fat": 20.0,
+        "satFat": 6.0,
+        "carbs": 64,
+        "sugar": 14.0,
+        "salt": 2.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Käsespätzle mit Röstzwiebeln",
+       "info": "",
+       "prices": {
+        "student": 3.3,
+        "staff": 5.4,
+        "guest": 6.27
+       },
+       "nutrition": {
+        "kcal": 890,
+        "protein": 31.0,
+        "fat": 42.0,
+        "satFat": 23.0,
+        "carbs": 92,
+        "sugar": 6.0,
+        "salt": 3.8
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-23",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Gemüse-Risotto",
+       "info": "",
+       "prices": {
+        "student": 3.4,
+        "staff": 5.5,
+        "guest": 6.46
+       },
+       "nutrition": {
+        "kcal": 610,
+        "protein": 15.0,
+        "fat": 19.0,
+        "satFat": 9.0,
+        "carbs": 92,
+        "sugar": 5.0,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Fleisch und Fisch",
+       "name": "Lachs mit Dillsauce und Kartoffeln",
+       "info": "",
+       "prices": {
+        "student": 5.3,
+        "staff": 7.4,
+        "guest": 10.07
+       },
+       "nutrition": {
+        "kcal": 660,
+        "protein": 35.0,
+        "fat": 32.0,
+        "satFat": 10.0,
+        "carbs": 52,
+        "sugar": 4.0,
+        "salt": 2.4
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Veganes Kartoffel-Linsen-Curry",
+       "info": "",
+       "prices": {
+        "student": 3.6,
+        "staff": 5.7,
+        "guest": 6.84
+       },
+       "nutrition": {
+        "kcal": 570,
+        "protein": 23.0,
+        "fat": 14.0,
+        "satFat": 5.0,
+        "carbs": 84,
+        "sugar": 9.0,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "key": "eselsberg",
+   "name": "THU Oberer Eselsberg",
+   "days": [
+    {
+     "date": "2026-10-19",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Farfalle-Spinat-Pfanne mit Kirschtomaten in Käsesahne",
+       "info": "",
+       "prices": {
+        "student": 3.9,
+        "staff": 6.0,
+        "guest": 7.41
+       },
+       "nutrition": {
+        "kcal": 648,
+        "protein": 21.4,
+        "fat": 24.1,
+        "satFat": 11.3,
+        "carbs": 82,
+        "sugar": 9.6,
+        "salt": 3.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Tofu-Curry mit Basmatireis",
+       "info": "",
+       "prices": {
+        "student": 4.1,
+        "staff": 6.2,
+        "guest": 7.79
+       },
+       "nutrition": {
+        "kcal": 612,
+        "protein": 24.5,
+        "fat": 18.0,
+        "satFat": 4.2,
+        "carbs": 84,
+        "sugar": 11.2,
+        "salt": 2.9
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Currywurst mit Pommes",
+       "info": "",
+       "prices": {
+        "student": 3.5,
+        "staff": 5.6,
+        "guest": 6.65
+       },
+       "nutrition": {
+        "kcal": 1010,
+        "protein": 28.0,
+        "fat": 58.0,
+        "satFat": 19.5,
+        "carbs": 88,
+        "sugar": 14.0,
+        "salt": 5.1
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Linsen-Dal mit Fladenbrot",
+       "info": "",
+       "prices": {
+        "student": 3.2,
+        "staff": 5.3,
+        "guest": 6.08
+       },
+       "nutrition": {
+        "kcal": 560,
+        "protein": 26.0,
+        "fat": 12.5,
+        "satFat": 2.1,
+        "carbs": 82,
+        "sugar": 8.0,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Gemüse-Lasagne",
+       "info": "",
+       "prices": {
+        "student": 3.9,
+        "staff": 6.0,
+        "guest": 7.41
+       },
+       "nutrition": {
+        "kcal": 720,
+        "protein": 25.0,
+        "fat": 32.0,
+        "satFat": 16.0,
+        "carbs": 78,
+        "sugar": 12.0,
+        "salt": 3.4
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Spätzle-Gemüse-Pfanne mit Käse",
+       "info": "",
+       "prices": {
+        "student": 3.4,
+        "staff": 5.5,
+        "guest": 6.46
+       },
+       "nutrition": {
+        "kcal": 810,
+        "protein": 27.5,
+        "fat": 34.0,
+        "satFat": 17.5,
+        "carbs": 96,
+        "sugar": 7.5,
+        "salt": 3.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Chili sin Carne mit Reis",
+       "info": "",
+       "prices": {
+        "student": 3.3,
+        "staff": 5.4,
+        "guest": 6.27
+       },
+       "nutrition": {
+        "kcal": 590,
+        "protein": 22.0,
+        "fat": 9.5,
+        "satFat": 1.4,
+        "carbs": 98,
+        "sugar": 10.0,
+        "salt": 2.7
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Falafel-Bowl mit Hummus",
+       "info": "",
+       "prices": {
+        "student": 4.2,
+        "staff": 6.3,
+        "guest": 7.98
+       },
+       "nutrition": {
+        "kcal": 680,
+        "protein": 21.0,
+        "fat": 30.0,
+        "satFat": 4.0,
+        "carbs": 78,
+        "sugar": 9.0,
+        "salt": 3.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Schnitzel Wiener Art mit Pommes",
+       "info": "",
+       "prices": {
+        "student": 4.1,
+        "staff": 6.2,
+        "guest": 7.79
+       },
+       "nutrition": {
+        "kcal": 980,
+        "protein": 38.0,
+        "fat": 52.0,
+        "satFat": 12.0,
+        "carbs": 86,
+        "sugar": 2.0,
+        "salt": 3.9
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Maultaschen in Brühe",
+       "info": "",
+       "prices": {
+        "student": 3.2,
+        "staff": 5.3,
+        "guest": 6.08
+       },
+       "nutrition": {
+        "kcal": 480,
+        "protein": 19.0,
+        "fat": 16.0,
+        "satFat": 6.5,
+        "carbs": 60,
+        "sugar": 3.0,
+        "salt": 4.2
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Ofengemüse mit Kichererbsen und Joghurtdip",
+       "info": "",
+       "prices": {
+        "student": 3.8,
+        "staff": 5.9,
+        "guest": 7.22
+       },
+       "nutrition": {
+        "kcal": 530,
+        "protein": 19.5,
+        "fat": 20.0,
+        "satFat": 6.0,
+        "carbs": 64,
+        "sugar": 14.0,
+        "salt": 2.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Sattmacher",
+       "name": "Käsespätzle mit Röstzwiebeln",
+       "info": "",
+       "prices": {
+        "student": 3.3,
+        "staff": 5.4,
+        "guest": 6.27
+       },
+       "nutrition": {
+        "kcal": 890,
+        "protein": 31.0,
+        "fat": 42.0,
+        "satFat": 23.0,
+        "carbs": 92,
+        "sugar": 6.0,
+        "salt": 3.8
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-10-23",
+     "items": [
+      {
+       "category": "Topf und Pfanne",
+       "name": "Gemüse-Risotto",
+       "info": "",
+       "prices": {
+        "student": 3.4,
+        "staff": 5.5,
+        "guest": 6.46
+       },
+       "nutrition": {
+        "kcal": 610,
+        "protein": 15.0,
+        "fat": 19.0,
+        "satFat": 9.0,
+        "carbs": 92,
+        "sugar": 5.0,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Prima Klima",
+       "name": "Veganes Kartoffel-Linsen-Curry",
+       "info": "",
+       "prices": {
+        "student": 3.6,
+        "staff": 5.7,
+        "guest": 6.84
+       },
+       "nutrition": {
+        "kcal": 570,
+        "protein": 23.0,
+        "fat": 14.0,
+        "satFat": 5.0,
+        "carbs": 84,
+        "sugar": 9.0,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
