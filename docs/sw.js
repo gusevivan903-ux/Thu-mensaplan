@@ -1,6 +1,6 @@
 // Service Worker: macht die Seite als App installierbar und zeigt offline den letzten Stand.
 // Strategie: immer zuerst Netz (frische Daten), bei Funkloch der zwischengespeicherte Stand.
-const CACHE = "mensa-v1";
+const CACHE = "mensa-v2";
 const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
 
 self.addEventListener("install", (e) => {

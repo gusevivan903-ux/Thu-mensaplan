@@ -23,6 +23,7 @@ import argparse
 import datetime as dt
 import json
 import os
+import re
 import sys
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -109,7 +110,18 @@ def short(name: str, n: int = 38) -> str:
     return name if len(name) <= n else name[: n - 1].rstrip(" ,") + "…"
 
 
+SIDE_RE = re.compile(r"dessert|nachtisch|beilage|salat|tagesgemüse|gemüsebeilage", re.I)
+
+
+def is_side(it: dict) -> bool:
+    if "kind" in it:
+        return it["kind"] == "side"
+    return bool(SIDE_RE.search(it.get("category") or "")) or (
+        (it.get("prices") or {}).get("student") is None and not it.get("nutrition"))
+
+
 def diet_filter(items: list[dict], diet: str) -> list[dict]:
+    items = [i for i in items if not is_side(i)]
     if diet == "vegan":
         return [i for i in items if "vegan" in (i.get("tags") or [])]
     if diet == "vegetarisch":

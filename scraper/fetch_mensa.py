@@ -75,6 +75,7 @@ def direct_text(tag: Tag) -> str:
 
 def clean_name(name: str) -> str:
     name = ALLERGEN_PAREN_RE.sub("", name)
+    name = re.sub(r"^\s*AKTION\s*:?\s+", "", name)  # Werbe-Präfix weg
     name = re.sub(r"\s+,", ",", name)
     return re.sub(r"\s+", " ", name).strip(" ,")
 
@@ -153,21 +154,47 @@ def parse_name_and_info(item: Tag) -> tuple[str, str]:
     cc = item.find("div", class_="cc")
     info = cc.get_text(" ", strip=True) if cc else ""
     name = ""
-    if cc is not None and isinstance(cc.parent, Tag):
-        name = direct_text(cc.parent)
+    # Der Name steht als direkter Text im selben Element wie die CO2-Info (.cc) bzw. die Nährwertbox (.azn)
+    for anchor in (cc, item.find("div", class_="azn")):
+        if anchor is not None and isinstance(anchor.parent, Tag):
+            name = direct_text(anchor.parent)
+            if name and not BOILERPLATE_RE.search(name):
+                break
+            name = ""
     if not name:
-        # Fallback: Element mit dem längsten direkten Text, das kein Preis ist
+        # Fallback: Element mit dem längsten direkten Text außerhalb von Nährwert-/CO2-Box, kein Preis
         best = ""
         for tag in item.find_all(True):
-            if tag.get("class") and any(c in ("cc", "azn") for c in tag.get("class")):
+            if in_box(tag):
                 continue
             t = direct_text(tag)
-            if PRICE3_RE.search(t) or re.fullmatch(r"[\d\s,.|€/]*", t or "x"):
+            if not t or PRICE3_RE.search(t) or BOILERPLATE_RE.search(t) or re.fullmatch(r"[\d\s,.|€/()A-Za-z]{0,6}", t):
                 continue
             if len(t) > len(best):
                 best = t
         name = best
     return clean_name(name), info
+
+
+BOILERPLATE_RE = re.compile(r"nährwert|pro portion|allergen|zusatzstoff|brennwert|kennzeichnung", re.I)
+
+
+def in_box(tag: Tag) -> bool:
+    """True, wenn das Element in der Nährwert- oder CO2-Box liegt (oder selbst eine ist)."""
+    for t in [tag, *tag.parents]:
+        if isinstance(t, Tag) and any(c in ("cc", "azn") for c in (t.get("class") or [])):
+            return True
+    return False
+
+
+SIDE_RE = re.compile(r"dessert|nachtisch|beilage|salat|tagesgemüse|gemüsebeilage", re.I)
+
+
+def nice_category(raw: str) -> str:
+    c = re.sub(r"\s+", " ", raw.replace("\xa0", " ")).strip()
+    if c.isupper() or c.upper() == c:
+        c = " ".join(w.capitalize() if w.isalpha() else w for w in c.lower().split(" "))
+    return c
 
 
 def parse_tags(item: Tag) -> tuple[list[str], list[str]]:
@@ -193,7 +220,7 @@ def parse_day_html(html: str) -> list[dict]:
         classes = " ".join(el.get("class") or [])
         if "gruppenkopf" in classes:
             g = el.find("div", class_="gruppenname")
-            category = (g or el).get_text(" ", strip=True)
+            category = nice_category((g or el).get_text(" ", strip=True))
             continue
         if el.get("lang") is None and not el.find("div", class_="azn") and not PRICE3_RE.search(el.get_text(" ")):
             continue  # kein Gericht (Leerzeile, Hinweis o.ä.)
@@ -201,12 +228,17 @@ def parse_day_html(html: str) -> list[dict]:
         if not name:
             continue
         tags, allergens = parse_tags(el)
+        prices = parse_prices(el)
+        nutrition = parse_nutrition(el)
+        # Desserts, Beilagen, Salat & Co. nicht mit Hauptgerichten vergleichen
+        is_side = bool(SIDE_RE.search(category)) or (prices["student"] is None and nutrition is None)
         items.append({
             "category": category,
             "name": name,
             "info": info,
-            "prices": parse_prices(el),
-            "nutrition": parse_nutrition(el),
+            "kind": "side" if is_side else "main",
+            "prices": prices,
+            "nutrition": nutrition,
             "tags": tags,
             "allergens": allergens,
         })

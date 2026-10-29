@@ -121,6 +121,11 @@
   .tag.warn { background: transparent; color: var(--warn); border: 1px solid currentColor; }
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tag.veg { background: #14351f; color: #86efac; } }
   :root[data-theme="dark"] .tag.veg { background: #14351f; color: #86efac; }
+  .sides { margin-top: 18px; }
+  .sides h4 { font-size: .9rem; margin: 0 0 8px; color: var(--muted); font-weight: 600; }
+  .side { display: flex; justify-content: space-between; gap: 12px; padding: 9px 2px; border-bottom: 1px solid var(--line); font-size: .9rem; }
+  .side small { color: var(--muted); margin-left: 4px; }
+  .side b { font-variant-numeric: tabular-nums; white-space: nowrap; }
   .empty { text-align: center; color: var(--muted); padding: 40px 16px; background: var(--surface); border-radius: var(--radius); }
   footer { margin-top: 28px; font-size: .8rem; color: var(--muted); line-height: 1.55; }
   footer h4 { color: var(--text); font-size: .88rem; margin: 18px 0 4px; }
@@ -159,13 +164,14 @@
   </details>
 
   <div class="list" id="list"></div>
+  <div class="sides" id="sides"></div>
 
   <footer>
     <h4>So wird bewertet</h4>
     <b>Preis:</b> Das günstigste Gericht des Tages bekommt 100, ein doppelt so teures 50 usw.<br>
     <b>Protein:</b> Das Gericht mit dem meisten Eiweiß bekommt 100, die anderen anteilig.<br>
     <b>Nährwerte:</b> Kalorien im sinnvollen Mittagsbereich (450–850 kcal), wenig gesättigte Fette, wenig Zucker und wenig Salz geben Punkte.<br>
-    Der Gesamtscore ist der gewichtete Mittelwert. Fehlen bei einem Gericht die Nährwerte, zählen Protein und Nährwerte neutral mit 50.
+    Verglichen werden nur Hauptgerichte, Desserts und Beilagen stehen separat darunter. Der Gesamtscore ist der gewichtete Mittelwert. Fehlen bei einem Gericht die Nährwerte, zählen Protein und Nährwerte neutral mit 50.
     <h4>Hinweise</h4>
     Daten vom offiziellen Speiseplan des Studierendenwerks Ulm, automatisch abgerufen. Laut Studierendenwerk können die Salzwerte systembedingt höher angegeben sein als real. Keine Gewähr, im Zweifel gilt der <a id="offLink" href="https://sw-ulm-spl51.maxmanager.xyz/index.php?locationId=3" target="_blank" rel="noopener">offizielle Speiseplan</a>. Privates Projekt, nicht vom Studierendenwerk.
   </footer>
@@ -246,6 +252,9 @@
 
   // ---------- Rendering
   const isVeg = (it) => it.tags?.includes("vegetarisch") || it.tags?.includes("vegan");
+  const SIDE_RE = /dessert|nachtisch|beilage|salat|tagesgemüse|gemüsebeilage/i;
+  const isSide = (it) => it.kind ? it.kind === "side"
+    : SIDE_RE.test(it.category || "") || (it.prices?.student == null && !it.nutrition);
   const tagsHtml = (it, r) => {
     const t = [];
     if (it.tags?.includes("vegan")) t.push('<span class="tag veg">vegan</span>');
@@ -307,8 +316,14 @@
     const loc = currentLoc();
     $("offLink").href = `https://sw-ulm-spl51.maxmanager.xyz/index.php?locationId=${loc.id}`;
     const day = loc.days.find((d) => d.date === state.date);
-    let items = day ? day.items.slice() : [];
+    const all = day ? day.items.slice() : [];
+    const sides = all.filter(isSide);
+    let items = all.filter((i) => !isSide(i));
     if (state.diet !== "all") items = items.filter((i) => state.diet === "vegan" ? i.tags?.includes("vegan") : isVeg(i));
+    $("sides").innerHTML = sides.filter((s) => s.prices?.student != null || s.nutrition).length
+      ? `<h4>Außerdem heute</h4>${sides.filter((s) => s.prices?.student != null || s.nutrition).map((s) =>
+          `<div class="side"><span>${esc(s.name)} <small>${esc(s.category)}</small></span><b>${fmtEur(priceOf(s))}</b></div>`).join("")}`
+      : "";
 
     if (!items.length) {
       $("winner").innerHTML = "";
