@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-29T09:53:15+00:00",
+ "generated": "2026-10-29T16:58:50+00:00",
  "demo": false,
  "locations": [
   {
@@ -762,33 +762,6 @@
        ]
       },
       {
-       "category": "Dessert",
-       "name": "Milchreis mit Apfel-Zimt Kompott",
-       "info": "",
-       "kind": "side",
-       "prices": {
-        "student": 1.2,
-        "staff": 1.75,
-        "guest": 2.3
-       },
-       "nutrition": {
-        "kcal": 145.0,
-        "protein": 3.8,
-        "fat": 1.6,
-        "satFat": 1.1,
-        "carbs": 29.8,
-        "sugar": 17.9,
-        "salt": 0.2
-       },
-       "tags": [
-        "vegetarisch"
-       ],
-       "allergens": [
-        "3",
-        "24"
-       ]
-      },
-      {
        "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
        "name": "siehe Auswahl vor Ort",
        "info": "",
@@ -1534,33 +1507,6 @@
        ]
       },
       {
-       "category": "Dessert",
-       "name": "Milchreis mit Apfel-Zimt Kompott",
-       "info": "",
-       "kind": "side",
-       "prices": {
-        "student": 1.2,
-        "staff": 1.75,
-        "guest": 2.3
-       },
-       "nutrition": {
-        "kcal": 145.0,
-        "protein": 3.8,
-        "fat": 1.6,
-        "satFat": 1.1,
-        "carbs": 29.8,
-        "sugar": 17.9,
-        "salt": 0.2
-       },
-       "tags": [
-        "vegetarisch"
-       ],
-       "allergens": [
-        "3",
-        "24"
-       ]
-      },
-      {
        "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
        "name": "siehe Auswahl vor Ort",
        "info": "",
@@ -1580,7 +1526,7 @@
   }
  ],
  "stats": {
-  "items": 59,
+  "items": 57,
   "errors": 0
  }
 }
