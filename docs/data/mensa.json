@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-03T17:55:30+00:00",
+ "generated": "2026-11-04T13:12:49+00:00",
  "demo": false,
  "locations": [
   {
@@ -1051,7 +1051,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Kohlroulade mit Speck-Rahmsoße, Petersilienkartoffeln",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 4.8,
@@ -1213,7 +1213,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Putenrahmgeschnetzeltes mit Waldpilzen und Semmelknödel",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.3,
