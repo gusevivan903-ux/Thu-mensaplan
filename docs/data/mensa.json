@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-04T18:04:34+00:00",
+ "generated": "2026-11-05T13:26:29+00:00",
  "demo": false,
  "locations": [
   {
@@ -561,13 +561,13 @@
         "guest": 10.65
        },
        "nutrition": {
-        "kcal": 1200.0,
-        "protein": 33.4,
-        "fat": 83.9,
-        "satFat": 7.0,
-        "carbs": 77.2,
-        "sugar": 7.1,
-        "salt": 3.9
+        "kcal": 686.0,
+        "protein": 32.9,
+        "fat": 27.2,
+        "satFat": 2.7,
+        "carbs": 75.3,
+        "sugar": 5.3,
+        "salt": 3.3
        },
        "tags": [
         "Fisch"
@@ -595,13 +595,13 @@
         "guest": 7.6
        },
        "nutrition": {
-        "kcal": 604.0,
-        "protein": 18.0,
-        "fat": 28.5,
-        "satFat": 2.6,
-        "carbs": 65.5,
-        "sugar": 15.1,
-        "salt": 3.2
+        "kcal": 607.0,
+        "protein": 19.5,
+        "fat": 29.8,
+        "satFat": 2.7,
+        "carbs": 61.1,
+        "sugar": 10.7,
+        "salt": 3.5
        },
        "tags": [
         "vegan",
@@ -609,6 +609,7 @@
        ],
        "allergens": [
         "3",
+        "9",
         "23",
         "27",
         "28",
@@ -1213,7 +1214,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Putenrahmgeschnetzeltes mit Waldpilzen und Semmelknödel",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.3,
@@ -1373,7 +1374,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Gebackenes Schollenfilet mit Kräuter-Mayonnaise, Salzkartoffeln",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.6,
@@ -1381,13 +1382,13 @@
         "guest": 10.65
        },
        "nutrition": {
-        "kcal": 1200.0,
-        "protein": 33.4,
-        "fat": 83.9,
-        "satFat": 7.0,
-        "carbs": 77.2,
-        "sugar": 7.1,
-        "salt": 3.9
+        "kcal": 686.0,
+        "protein": 32.9,
+        "fat": 27.2,
+        "satFat": 2.7,
+        "carbs": 75.3,
+        "sugar": 5.3,
+        "salt": 3.3
        },
        "tags": [
         "Fisch"
