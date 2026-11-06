@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-05T18:07:33+00:00",
+ "generated": "2026-11-06T13:09:27+00:00",
  "demo": false,
  "locations": [
   {
@@ -820,6 +820,791 @@
        "allergens": []
       }
      ]
+    },
+    {
+     "date": "2026-11-09",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Smoky Cauliflower auf Ratatouille, dazu Sesamkartoffeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.15,
+        "staff": 6.05,
+        "guest": 7.9
+       },
+       "nutrition": {
+        "kcal": 313.0,
+        "protein": 10.3,
+        "fat": 10.7,
+        "satFat": 1.0,
+        "carbs": 45.0,
+        "sugar": 11.1,
+        "salt": 2.3
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "28",
+        "34W",
+        "34H"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Spätzle und Spinat mit Käse überbacken, dazu geschmälzte Zwiebel",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.4,
+        "staff": 6.4,
+        "guest": 8.4
+       },
+       "nutrition": {
+        "kcal": 985.0,
+        "protein": 48.7,
+        "fat": 43.1,
+        "satFat": 25.7,
+        "carbs": 98.7,
+        "sugar": 9.1,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Hirtenrolle mit Tomatenreis, hausgemachtem Zaziki",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.75,
+        "staff": 6.9,
+        "guest": 9.05
+       },
+       "nutrition": {
+        "kcal": 368.0,
+        "protein": 7.2,
+        "fat": 13.1,
+        "satFat": 3.6,
+        "carbs": 53.7,
+        "sugar": 6.8,
+        "salt": 3.8
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "14",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Haferjoghurt mit Brombeeren",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 161.0,
+        "protein": 3.4,
+        "fat": 3.9,
+        "satFat": 0.5,
+        "carbs": 23.7,
+        "sugar": 6.8,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mandarinen- Vanillequark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 140.0,
+        "protein": 3.8,
+        "fat": 6.7,
+        "satFat": 4.1,
+        "carbs": 17.4,
+        "sugar": 16.5,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Kuschari - Ägyptisches Kichererbsen-Gericht mit würziger Tomatensoße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.2,
+        "staff": 4.65,
+        "guest": 6.1
+       },
+       "nutrition": {
+        "kcal": 767.0,
+        "protein": 27.6,
+        "fat": 47.8,
+        "satFat": 2.7,
+        "carbs": 122.5,
+        "sugar": 9.0,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "4",
+        "5",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Moussaka - Kartoffelauflauf mit Auberginen, Zwiebeln und Weißkäse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.65,
+        "staff": 5.3,
+        "guest": 6.95
+       },
+       "nutrition": {
+        "kcal": 466.0,
+        "protein": 15.6,
+        "fat": 24.0,
+        "satFat": 7.2,
+        "carbs": 47.1,
+        "sugar": 12.8,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Rindergulasch nach ungarischer Art mit Knöpflespätzle",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.35,
+        "staff": 7.8,
+        "guest": 10.2
+       },
+       "nutrition": {
+        "kcal": 723.0,
+        "protein": 39.4,
+        "fat": 27.3,
+        "satFat": 7.3,
+        "carbs": 76.0,
+        "sugar": 12.1,
+        "salt": 5.0
+       },
+       "tags": [
+        "Rind"
+       ],
+       "allergens": [
+        "11",
+        "14",
+        "26",
+        "30",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Obstsalat Haferjoghurt mit Brombeeren",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 185.0,
+        "protein": 3.7,
+        "fat": 5.0,
+        "satFat": 1.1,
+        "carbs": 26.7,
+        "sugar": 9.7,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Himbeerjoghurt",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "satFat": 0.0,
+        "carbs": 0.0,
+        "sugar": 0.0,
+        "salt": 0.0
+       },
+       "tags": [],
+       "allergens": []
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Bratnudeln mit frischem Gemüse, Räuchertofu, Erdnüssen und Sweet Chili Dip",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.85,
+        "staff": 5.6,
+        "guest": 7.35
+       },
+       "nutrition": {
+        "kcal": 724.0,
+        "protein": 28.2,
+        "fat": 18.2,
+        "satFat": 3.0,
+        "carbs": 100.7,
+        "sugar": 32.7,
+        "salt": 4.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "22",
+        "23",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Chili sin carne mit Kräuter-Joghurt-Dip, Langkornreis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.55,
+        "staff": 5.15,
+        "guest": 6.75
+       },
+       "nutrition": {
+        "kcal": 596.0,
+        "protein": 26.7,
+        "fat": 7.9,
+        "satFat": 2.5,
+        "carbs": 97.4,
+        "sugar": 11.7,
+        "salt": 3.7
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Hähnchenbrust mit Rosenkohl und Zitronen-Kartoffeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.05,
+        "staff": 7.35,
+        "guest": 9.6
+       },
+       "nutrition": {
+        "kcal": 440.0,
+        "protein": 44.9,
+        "fat": 13.3,
+        "satFat": 2.0,
+        "carbs": 32.1,
+        "sugar": 9.7,
+        "salt": 1.6
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "26"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Heidelbeer-Himbeermousse mit Sahne Obstsalat",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 419.0,
+        "protein": 6.6,
+        "fat": 26.7,
+        "satFat": 13.9,
+        "carbs": 38.6,
+        "sugar": 37.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "3",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Cappuccinoquark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 386.0,
+        "protein": 20.7,
+        "fat": 10.3,
+        "satFat": 6.8,
+        "carbs": 57.4,
+        "sugar": 53.0,
+        "salt": 0.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "8",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Sri-Lanka-Curry-Bowl mit roten Linsen, Gemüse, Kokosmilch und Basmatireis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.3,
+        "staff": 4.8,
+        "guest": 6.3
+       },
+       "nutrition": {
+        "kcal": 609.0,
+        "protein": 22.7,
+        "fat": 9.5,
+        "satFat": 3.6,
+        "carbs": 94.6,
+        "sugar": 9.3,
+        "salt": 1.3
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Rote Beete-Gnocchi-Pfanne mit Zucchini, Champignons, Kirschtomaten und Frischkäse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.1,
+        "staff": 5.95,
+        "guest": 7.8
+       },
+       "nutrition": {
+        "kcal": 656.0,
+        "protein": 13.7,
+        "fat": 17.1,
+        "satFat": 8.6,
+        "carbs": 105.2,
+        "sugar": 15.8,
+        "salt": 5.3
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Backfisch mit Kartoffel-Gurken-Salat, hausgemachte Remoulade",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.65,
+        "staff": 8.2,
+        "guest": 10.75
+       },
+       "nutrition": {
+        "kcal": 795.0,
+        "protein": 27.2,
+        "fat": 55.0,
+        "satFat": 4.8,
+        "carbs": 48.4,
+        "sugar": 8.9,
+        "salt": 6.0
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": [
+        "2",
+        "9",
+        "14",
+        "24",
+        "27",
+        "35",
+        "34W"
+       ]
+      },
+      {
+       "category": "Specials",
+       "name": "Feuerwurst im Baguette",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.5,
+        "staff": 6.55,
+        "guest": 8.55
+       },
+       "nutrition": {
+        "kcal": 638.0,
+        "protein": 28.2,
+        "fat": 24.5,
+        "satFat": 9.1,
+        "carbs": 73.6,
+        "sugar": 1.5,
+        "salt": 5.3
+       },
+       "tags": [
+        "Rind"
+       ],
+       "allergens": [
+        "2",
+        "3",
+        "8",
+        "9",
+        "14",
+        "24",
+        "27",
+        "34W",
+        "34G"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mousse Vanille mit Zuckerstreusel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 306.0,
+        "protein": 4.6,
+        "fat": 28.7,
+        "satFat": 18.0,
+        "carbs": 8.4,
+        "sugar": 8.4,
+        "salt": 0.1
+       },
+       "tags": [],
+       "allergens": [
+        "1",
+        "18R",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Kokos-Ananas-Joghurt",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 382.0,
+        "protein": 18.1,
+        "fat": 14.3,
+        "satFat": 10.4,
+        "carbs": 42.8,
+        "sugar": 40.5,
+        "salt": 0.4
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-13",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Bunte Quinoa-Kichererbsen-Pfanne mit Pastinaken, Kürbis, Bohnen und Erbsen",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.65,
+        "staff": 5.3,
+        "guest": 6.95
+       },
+       "nutrition": {
+        "kcal": 457.0,
+        "protein": 17.7,
+        "fat": 54.5,
+        "satFat": 1.3,
+        "carbs": 65.6,
+        "sugar": 9.4,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Mac and Cheese - Makkaroni-Käse-Auflauf mit Jalapenos",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.0,
+        "staff": 5.8,
+        "guest": 7.6
+       },
+       "nutrition": {
+        "kcal": 1050.0,
+        "protein": 48.5,
+        "fat": 56.8,
+        "satFat": 31.3,
+        "carbs": 88.6,
+        "sugar": 8.2,
+        "salt": 2.3
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "24",
+        "27",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Gebackenes Putenschnitzel mit Country Cubes",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.35,
+        "staff": 7.8,
+        "guest": 10.2
+       },
+       "nutrition": {
+        "kcal": 699.0,
+        "protein": 0.0,
+        "fat": 29.0,
+        "satFat": 3.7,
+        "carbs": 73.4,
+        "sugar": 3.0,
+        "salt": 0.0
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "1",
+        "3",
+        "14",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Schoko-Minz Creme mit After Eight",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 66.0,
+        "protein": 3.0,
+        "fat": 2.8,
+        "satFat": 1.0,
+        "carbs": 7.3,
+        "sugar": 2.6,
+        "salt": 0.1
+       },
+       "tags": [],
+       "allergens": [
+        "1",
+        "18",
+        "23",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
     }
    ]
   },
@@ -1374,7 +2159,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Gebackenes Schollenfilet mit Kräuter-Mayonnaise, Salzkartoffeln",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.6,
@@ -1539,7 +2324,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Schweineschnitzel mit Pommes frites",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 4.9,
@@ -1608,12 +2393,764 @@
        "allergens": []
       }
      ]
+    },
+    {
+     "date": "2026-11-09",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Smoky Cauliflower auf Ratatouille, dazu Sesamkartoffeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.15,
+        "staff": 6.05,
+        "guest": 7.9
+       },
+       "nutrition": {
+        "kcal": 547.0,
+        "protein": 9.8,
+        "fat": 24.5,
+        "satFat": 2.1,
+        "carbs": 72.6,
+        "sugar": 9.1,
+        "salt": 5.4
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "28",
+        "34W",
+        "34H"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Spätzle und Spinat mit Käse überbacken, dazu geschmälzte Zwiebel",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.4,
+        "staff": 6.4,
+        "guest": 8.4
+       },
+       "nutrition": {
+        "kcal": 909.0,
+        "protein": 46.2,
+        "fat": 47.5,
+        "satFat": 26.7,
+        "carbs": 73.9,
+        "sugar": 13.1,
+        "salt": 5.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "14",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Hirtenrolle mit Tomatenreis, hausgemachtem Zaziki",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 4.75,
+        "staff": 6.9,
+        "guest": 9.05
+       },
+       "nutrition": {
+        "kcal": 368.0,
+        "protein": 7.2,
+        "fat": 13.1,
+        "satFat": 3.6,
+        "carbs": 53.7,
+        "sugar": 6.8,
+        "salt": 3.8
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "14",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Haferjoghurt mit Brombeeren",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 161.0,
+        "protein": 3.4,
+        "fat": 3.9,
+        "satFat": 0.5,
+        "carbs": 23.7,
+        "sugar": 6.8,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mandarinen- Vanillequark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 140.0,
+        "protein": 3.8,
+        "fat": 6.7,
+        "satFat": 4.1,
+        "carbs": 17.4,
+        "sugar": 16.5,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-10",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Kuschari - Ägyptisches Kichererbsen-Gericht mit würziger Tomatensoße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.2,
+        "staff": 4.65,
+        "guest": 6.1
+       },
+       "nutrition": {
+        "kcal": 772.0,
+        "protein": 27.8,
+        "fat": 48.0,
+        "satFat": 2.7,
+        "carbs": 123.0,
+        "sugar": 9.3,
+        "salt": 2.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "4",
+        "5",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Moussaka - Kartoffelauflauf mit Auberginen, Zwiebeln und Weißkäse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.65,
+        "staff": 5.3,
+        "guest": 6.95
+       },
+       "nutrition": {
+        "kcal": 465.0,
+        "protein": 15.6,
+        "fat": 24.0,
+        "satFat": 7.2,
+        "carbs": 47.0,
+        "sugar": 12.8,
+        "salt": 2.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Rindergulasch nach ungarischer Art mit Knöpflespätzle",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.35,
+        "staff": 7.8,
+        "guest": 10.2
+       },
+       "nutrition": {
+        "kcal": 723.0,
+        "protein": 39.4,
+        "fat": 27.3,
+        "satFat": 7.3,
+        "carbs": 76.0,
+        "sugar": 12.1,
+        "salt": 5.0
+       },
+       "tags": [
+        "Rind"
+       ],
+       "allergens": [
+        "11",
+        "14",
+        "26",
+        "30",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Obstsalat Haferjoghurt mit Brombeeren",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 185.0,
+        "protein": 3.7,
+        "fat": 5.0,
+        "satFat": 1.1,
+        "carbs": 26.7,
+        "sugar": 9.7,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Himbeerjoghurt",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 0.0,
+        "protein": 0.0,
+        "fat": 0.0,
+        "satFat": 0.0,
+        "carbs": 0.0,
+        "sugar": 0.0,
+        "salt": 0.0
+       },
+       "tags": [],
+       "allergens": []
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-11",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Bratnudeln mit frischem Gemüse, Räuchertofu, Erdnüssen und Sweet Chili Dip",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.85,
+        "staff": 5.6,
+        "guest": 7.35
+       },
+       "nutrition": {
+        "kcal": 726.0,
+        "protein": 28.3,
+        "fat": 18.2,
+        "satFat": 3.1,
+        "carbs": 101.0,
+        "sugar": 32.8,
+        "salt": 4.3
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "22",
+        "23",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Chili sin carne mit Kräuter-Joghurt-Dip, Langkornreis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.55,
+        "staff": 5.15,
+        "guest": 6.75
+       },
+       "nutrition": {
+        "kcal": 595.0,
+        "protein": 26.7,
+        "fat": 7.8,
+        "satFat": 2.5,
+        "carbs": 97.3,
+        "sugar": 11.6,
+        "salt": 3.7
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Hähnchenbrust mit Rosenkohl und Zitronen-Kartoffeln",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.05,
+        "staff": 7.35,
+        "guest": 9.6
+       },
+       "nutrition": {
+        "kcal": 440.0,
+        "protein": 44.9,
+        "fat": 13.3,
+        "satFat": 2.0,
+        "carbs": 32.1,
+        "sugar": 9.7,
+        "salt": 1.6
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "26"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Heidelbeer-Himbeermousse mit Sahne Obstsalat",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 419.0,
+        "protein": 6.6,
+        "fat": 26.7,
+        "satFat": 13.9,
+        "carbs": 38.6,
+        "sugar": 37.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "3",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Cappuccinoquark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 386.0,
+        "protein": 20.7,
+        "fat": 10.3,
+        "satFat": 6.8,
+        "carbs": 57.4,
+        "sugar": 53.0,
+        "salt": 0.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "8",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-12",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Sri-Lanka-Curry-Bowl mit roten Linsen, Gemüse, Kokosmilch und Basmatireis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.3,
+        "staff": 4.8,
+        "guest": 6.3
+       },
+       "nutrition": {
+        "kcal": 611.0,
+        "protein": 22.8,
+        "fat": 9.6,
+        "satFat": 3.6,
+        "carbs": 94.8,
+        "sugar": 9.4,
+        "salt": 1.4
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Rote Beete-Gnocchi-Pfanne mit Zucchini, Champignons, Kirschtomaten und Frischkäse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.1,
+        "staff": 5.95,
+        "guest": 7.8
+       },
+       "nutrition": {
+        "kcal": 658.0,
+        "protein": 13.8,
+        "fat": 17.1,
+        "satFat": 8.6,
+        "carbs": 105.4,
+        "sugar": 15.9,
+        "salt": 5.3
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Backfisch mit Kartoffel-Gurken-Salat, hausgemachte Remoulade",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.65,
+        "staff": 8.2,
+        "guest": 10.75
+       },
+       "nutrition": {
+        "kcal": 795.0,
+        "protein": 27.2,
+        "fat": 55.0,
+        "satFat": 4.8,
+        "carbs": 48.4,
+        "sugar": 8.9,
+        "salt": 6.0
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": [
+        "2",
+        "9",
+        "14",
+        "24",
+        "27",
+        "35",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mousse Vanille mit Zuckerstreusel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 469.0,
+        "protein": 8.7,
+        "fat": 34.3,
+        "satFat": 20.6,
+        "carbs": 32.5,
+        "sugar": 29.4,
+        "salt": 0.2
+       },
+       "tags": [],
+       "allergens": [
+        "1",
+        "18R",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Kokos-Ananas-Joghurt",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 382.0,
+        "protein": 18.1,
+        "fat": 14.3,
+        "satFat": 10.4,
+        "carbs": 42.8,
+        "sugar": 40.5,
+        "salt": 0.4
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-11-13",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Bunte Quinoa-Kichererbsen-Pfanne mit Pastinaken, Kürbis, Bohnen und Erbsen",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.65,
+        "staff": 5.3,
+        "guest": 6.95
+       },
+       "nutrition": {
+        "kcal": 457.0,
+        "protein": 17.8,
+        "fat": 54.3,
+        "satFat": 1.3,
+        "carbs": 65.8,
+        "sugar": 9.7,
+        "salt": 2.6
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": []
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Mac and Cheese - Makkaroni-Käse-Auflauf mit Jalapenos",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.0,
+        "staff": 5.8,
+        "guest": 7.6
+       },
+       "nutrition": {
+        "kcal": 1050.0,
+        "protein": 48.5,
+        "fat": 56.8,
+        "satFat": 31.3,
+        "carbs": 88.6,
+        "sugar": 8.2,
+        "salt": 2.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "24",
+        "27",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Gebackenes Putenschnitzel mit Country Cubes",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.35,
+        "staff": 7.8,
+        "guest": 10.2
+       },
+       "nutrition": {
+        "kcal": 699.0,
+        "protein": 0.0,
+        "fat": 29.0,
+        "satFat": 3.7,
+        "carbs": 73.4,
+        "sugar": 3.0,
+        "salt": 0.0
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "1",
+        "3",
+        "14",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Schoko-Minz Creme mit After Eight",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 66.0,
+        "protein": 3.0,
+        "fat": 2.8,
+        "satFat": 1.0,
+        "carbs": 7.3,
+        "sugar": 2.6,
+        "salt": 0.1
+       },
+       "tags": [],
+       "allergens": [
+        "1",
+        "18",
+        "23",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
     }
    ]
   }
  ],
  "stats": {
-  "items": 59,
+  "items": 118,
   "errors": 0
  }
 }
