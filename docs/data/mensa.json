@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09T20:50:38+00:00",
+ "generated": "2026-11-10T13:42:16+00:00",
  "demo": false,
  "locations": [
   {
@@ -862,7 +862,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Hirtenrolle mit Tomatenreis, hausgemachtem Zaziki",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 4.75,
@@ -1019,7 +1019,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Rindergulasch nach ungarischer Art mit Knöpflespätzle",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.35,
