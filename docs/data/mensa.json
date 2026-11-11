@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-10T17:57:50+00:00",
+ "generated": "2026-11-11T12:53:58+00:00",
  "demo": false,
  "locations": [
   {
@@ -1019,7 +1019,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Rindergulasch nach ungarischer Art mit Knöpflespätzle",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.35,
@@ -1173,7 +1173,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Hähnchenbrust mit Rosenkohl und Zitronen-Kartoffeln",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.05,
