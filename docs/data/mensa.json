@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-11T17:56:19+00:00",
+ "generated": "2026-11-12T13:56:10+00:00",
  "demo": false,
  "locations": [
   {
@@ -487,11 +487,11 @@
         "guest": 6.3
        },
        "nutrition": {
-        "kcal": 609.0,
+        "kcal": 610.0,
         "protein": 22.7,
         "fat": 9.5,
         "satFat": 3.6,
-        "carbs": 94.6,
+        "carbs": 94.7,
         "sugar": 9.3,
         "salt": 1.3
        },
@@ -1173,7 +1173,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Hähnchenbrust mit Rosenkohl und Zitronen-Kartoffeln",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.05,
@@ -1325,7 +1325,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Backfisch mit Kartoffel-Gurken-Salat, hausgemachte Remoulade",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.65,
