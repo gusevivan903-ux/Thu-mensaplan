@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-16T20:33:56+00:00",
+ "generated": "2026-11-17T14:47:50+00:00",
  "demo": false,
  "locations": [
   {
@@ -180,13 +180,13 @@
         "guest": 8.0
        },
        "nutrition": {
-        "kcal": 592.0,
-        "protein": 22.2,
-        "fat": 26.2,
+        "kcal": 594.0,
+        "protein": 22.3,
+        "fat": 26.4,
         "satFat": 7.7,
-        "carbs": 66.4,
-        "sugar": 13.5,
-        "salt": 5.2
+        "carbs": 66.8,
+        "sugar": 13.7,
+        "salt": 5.4
        },
        "tags": [
         "vegan",
@@ -285,7 +285,7 @@
       },
       {
        "category": "Dessert",
-       "name": "Apfelkuchen Dessert mit Krokant",
+       "name": "Fruchtquark",
        "info": "",
        "kind": "side",
        "prices": {
@@ -294,20 +294,20 @@
         "guest": 1.9
        },
        "nutrition": {
-        "kcal": 215.0,
-        "protein": 0.0,
-        "fat": 8.1,
-        "satFat": 5.0,
-        "carbs": 31.1,
-        "sugar": 28.1,
-        "salt": 0.0
+        "kcal": 145.0,
+        "protein": 8.8,
+        "fat": 2.9,
+        "satFat": 1.8,
+        "carbs": 19.0,
+        "sugar": 18.5,
+        "salt": 0.1
        },
        "tags": [
         "vegetarisch"
        ],
        "allergens": [
-        "24",
-        "25H"
+        "1",
+        "24"
        ]
       },
       {
@@ -632,6 +632,33 @@
        ]
       },
       {
+       "category": "Dessert",
+       "name": "Apfelkuchen Dessert mit Krokant",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 215.0,
+        "protein": 0.0,
+        "fat": 8.1,
+        "satFat": 5.0,
+        "carbs": 31.1,
+        "sugar": 28.1,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "25H"
+       ]
+      },
+      {
        "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
        "name": "siehe Auswahl vor Ort",
        "info": "",
@@ -852,7 +879,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Rotes Thai Curry mit Rind- und Hähnchenstreifen auf Basmatireis",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.1,
@@ -1013,7 +1040,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Ungarn, Gulaschsuppe mit Paprika und Kartoffeln, Brötchen",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.4,
@@ -1065,7 +1092,7 @@
       },
       {
        "category": "Dessert",
-       "name": "Apfelkuchen Dessert mit Krokant",
+       "name": "Fruchtquark",
        "info": "",
        "kind": "side",
        "prices": {
@@ -1074,20 +1101,20 @@
         "guest": 1.9
        },
        "nutrition": {
-        "kcal": 215.0,
-        "protein": 0.0,
-        "fat": 8.1,
-        "satFat": 5.0,
-        "carbs": 31.1,
-        "sugar": 28.1,
-        "salt": 0.0
+        "kcal": 145.0,
+        "protein": 8.8,
+        "fat": 2.9,
+        "satFat": 1.8,
+        "carbs": 19.0,
+        "sugar": 18.5,
+        "salt": 0.1
        },
        "tags": [
         "vegetarisch"
        ],
        "allergens": [
-        "24",
-        "25H"
+        "1",
+        "24"
        ]
       },
       {
@@ -1412,6 +1439,33 @@
        ]
       },
       {
+       "category": "Dessert",
+       "name": "Apfelkuchen Dessert mit Krokant",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 215.0,
+        "protein": 0.0,
+        "fat": 8.1,
+        "satFat": 5.0,
+        "carbs": 31.1,
+        "sugar": 28.1,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "25H"
+       ]
+      },
+      {
        "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
        "name": "siehe Auswahl vor Ort",
        "info": "",
@@ -1564,7 +1618,7 @@
   }
  ],
  "stats": {
-  "items": 58,
+  "items": 60,
   "errors": 0
  }
 }
