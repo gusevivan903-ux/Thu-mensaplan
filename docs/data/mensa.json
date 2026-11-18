@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17T19:14:26+00:00",
+ "generated": "2026-11-18T14:27:52+00:00",
  "demo": false,
  "locations": [
   {
@@ -359,7 +359,7 @@
       },
       {
        "category": "Vegetarisch",
-       "name": "Griechenland, Bunter Tomateneintopf mit Kritharaki und Hirtenkäse, Fladenbrot",
+       "name": "Griechenland, Bunter Tomateneintopf mit Kritharaki und Hirtenkäse",
        "info": "",
        "kind": "main",
        "prices": {
@@ -602,33 +602,6 @@
         "18R",
         "24",
         "34W"
-       ]
-      },
-      {
-       "category": "Dessert",
-       "name": "Apfelkuchen Dessert mit Krokant",
-       "info": "",
-       "kind": "side",
-       "prices": {
-        "student": 1.0,
-        "staff": 1.45,
-        "guest": 1.9
-       },
-       "nutrition": {
-        "kcal": 215.0,
-        "protein": 0.0,
-        "fat": 8.1,
-        "satFat": 5.0,
-        "carbs": 31.1,
-        "sugar": 28.1,
-        "salt": 0.0
-       },
-       "tags": [
-        "vegetarisch"
-       ],
-       "allergens": [
-        "24",
-        "25H"
        ]
       },
       {
@@ -1040,7 +1013,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Ungarn, Gulaschsuppe mit Paprika und Kartoffeln, Brötchen",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.4,
@@ -1166,7 +1139,7 @@
       },
       {
        "category": "Vegetarisch",
-       "name": "Griechenland, Bunter Tomateneintopf mit Kritharaki und Hirtenkäse, Fladenbrot",
+       "name": "Griechenland, Bunter Tomateneintopf mit Kritharaki und Hirtenkäse",
        "info": "",
        "kind": "main",
        "prices": {
@@ -1194,7 +1167,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Spaghetti mit Schinken-Sahnesoße",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 4.25,
@@ -1439,33 +1412,6 @@
        ]
       },
       {
-       "category": "Dessert",
-       "name": "Apfelkuchen Dessert mit Krokant",
-       "info": "",
-       "kind": "side",
-       "prices": {
-        "student": 1.0,
-        "staff": 1.45,
-        "guest": 1.9
-       },
-       "nutrition": {
-        "kcal": 215.0,
-        "protein": 0.0,
-        "fat": 8.1,
-        "satFat": 5.0,
-        "carbs": 31.1,
-        "sugar": 28.1,
-        "salt": 0.0
-       },
-       "tags": [
-        "vegetarisch"
-       ],
-       "allergens": [
-        "24",
-        "25H"
-       ]
-      },
-      {
        "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
        "name": "siehe Auswahl vor Ort",
        "info": "",
@@ -1618,7 +1564,7 @@
   }
  ],
  "stats": {
-  "items": 60,
+  "items": 58,
   "errors": 0
  }
 }
