@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-18T18:53:48+00:00",
+ "generated": "2026-11-19T14:38:59+00:00",
  "demo": false,
  "locations": [
   {
@@ -499,9 +499,9 @@
         "protein": 20.1,
         "fat": 36.8,
         "satFat": 3.7,
-        "carbs": 99.9,
-        "sugar": 14.9,
-        "salt": 5.3
+        "carbs": 99.8,
+        "sugar": 16.5,
+        "salt": 5.4
        },
        "tags": [
         "vegan",
@@ -1167,7 +1167,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Spaghetti mit Schinken-Sahnesoße",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 4.25,
@@ -1279,9 +1279,9 @@
         "protein": 20.1,
         "fat": 36.8,
         "satFat": 3.7,
-        "carbs": 100.0,
-        "sugar": 14.8,
-        "salt": 4.8
+        "carbs": 99.9,
+        "sugar": 16.4,
+        "salt": 4.9
        },
        "tags": [
         "vegan",
@@ -1329,7 +1329,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Butt in Petersilienpanade mit Rote Beete-Meerrettichsoße, Salzkartoffeln",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.35,
