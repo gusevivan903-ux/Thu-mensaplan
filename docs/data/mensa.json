@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T22:05:41+00:00",
+ "generated": "2026-11-24T16:11:20+00:00",
  "demo": false,
  "locations": [
   {
@@ -553,19 +553,18 @@
         "guest": 8.65
        },
        "nutrition": {
-        "kcal": 1126.0,
-        "protein": 57.1,
-        "fat": 65.3,
-        "satFat": 46.6,
-        "carbs": 78.6,
-        "sugar": 14.6,
-        "salt": 5.5
+        "kcal": 1111.0,
+        "protein": 56.3,
+        "fat": 60.5,
+        "satFat": 45.5,
+        "carbs": 85.6,
+        "sugar": 9.8,
+        "salt": 3.0
        },
        "tags": [
         "vegetarisch"
        ],
        "allergens": [
-        "14",
         "24",
         "34W"
        ]
@@ -898,7 +897,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Oberschwäbische Bauernpfanne",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 4.2,
@@ -1086,7 +1085,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Szegediner Gulasch Salzkartoffeln",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 4.7,
