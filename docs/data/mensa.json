@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T20:43:04+00:00",
+ "generated": "2026-11-25T15:56:09+00:00",
  "demo": false,
  "locations": [
   {
@@ -1085,7 +1085,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Szegediner Gulasch Salzkartoffeln",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 4.7,
@@ -1242,7 +1242,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Maispouladenbrust mit Schmorgemüse provence dazu Kräuterreis",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 5.75,
