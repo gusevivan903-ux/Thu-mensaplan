@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-26T19:43:00+00:00",
+ "generated": "2026-11-27T15:28:30+00:00",
  "demo": false,
  "locations": [
   {
@@ -827,6 +827,817 @@
        "allergens": []
       }
      ]
+    },
+    {
+     "date": "2026-11-30",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Tikka Masala mit veganem Hähnchen und Fladenbrot",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.65,
+        "staff": 6.75,
+        "guest": 8.85
+       },
+       "nutrition": {
+        "kcal": 819.0,
+        "protein": 34.5,
+        "fat": 32.4,
+        "satFat": 9.8,
+        "carbs": 90.3,
+        "sugar": 13.2,
+        "salt": 5.4
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "27",
+        "28",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Kartoffelgratin Elsässer Art mit Lauch und Zwiebeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.0,
+        "staff": 5.8,
+        "guest": 7.6
+       },
+       "nutrition": {
+        "kcal": 661.0,
+        "protein": 21.1,
+        "fat": 40.0,
+        "satFat": 18.3,
+        "carbs": 49.3,
+        "sugar": 9.5,
+        "salt": 4.9
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "14",
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Geröstete Maultaschen mit Ei und Gemüse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.8,
+        "staff": 7.0,
+        "guest": 9.15
+       },
+       "nutrition": {
+        "kcal": 808.0,
+        "protein": 32.5,
+        "fat": 39.8,
+        "satFat": 12.2,
+        "carbs": 77.7,
+        "sugar": 13.1,
+        "salt": 6.3
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "4",
+        "14",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Vegane Schokocreme mit Birnen",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 213.0,
+        "protein": 1.6,
+        "fat": 13.4,
+        "satFat": 8.8,
+        "carbs": 20.8,
+        "sugar": 14.2,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Kirschjoghurt mit Schokostreusel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 171.0,
+        "protein": 5.8,
+        "fat": 5.5,
+        "satFat": 4.0,
+        "carbs": 23.5,
+        "sugar": 22.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-01",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Schupfnudeln mit Brokkoli-Gemüse, geräuchertem Tofu und Mandeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.9,
+        "staff": 5.7,
+        "guest": 7.45
+       },
+       "nutrition": {
+        "kcal": 878.0,
+        "protein": 26.6,
+        "fat": 36.4,
+        "satFat": 5.3,
+        "carbs": 103.3,
+        "sugar": 17.9,
+        "salt": 2.3
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "34W",
+        "25Mn"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Linguine mit winterlichen buntem Gemüse und pikanter Soße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.35,
+        "staff": 4.9,
+        "guest": 6.4
+       },
+       "nutrition": {
+        "kcal": 401.0,
+        "protein": 13.5,
+        "fat": 12.2,
+        "satFat": 2.1,
+        "carbs": 30.6,
+        "sugar": 17.7,
+        "salt": 1.3
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "22",
+        "23",
+        "28",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Kohlroulade mit Speck-Rahmsoße, Petersilienkartoffeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.8,
+        "staff": 7.0,
+        "guest": 9.15
+       },
+       "nutrition": {
+        "kcal": 666.0,
+        "protein": 13.7,
+        "fat": 409.4,
+        "satFat": 34.6,
+        "carbs": 46.9,
+        "sugar": 16.7,
+        "salt": 7.1
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "2",
+        "3",
+        "8",
+        "14",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Milchreis mit Pflaumenkompott",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 162.0,
+        "protein": 3.9,
+        "fat": 1.6,
+        "satFat": 1.0,
+        "carbs": 32.2,
+        "sugar": 19.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Brombeerquark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 45.0,
+        "protein": 0.9,
+        "fat": 0.9,
+        "satFat": 0.5,
+        "carbs": 7.4,
+        "sugar": 7.4,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-02",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Marokkanisches Ofengemüse mit veganem Dip, dazu Couscous und Zitronengarnitur",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.25,
+        "staff": 6.2,
+        "guest": 8.1
+       },
+       "nutrition": {
+        "kcal": 711.0,
+        "protein": 14.9,
+        "fat": 86.5,
+        "satFat": 2.8,
+        "carbs": 79.6,
+        "sugar": 24.1,
+        "salt": 4.3
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "27",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Linsen mit Spätzle",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.25,
+        "staff": 4.75,
+        "guest": 6.2
+       },
+       "nutrition": {
+        "kcal": 677.0,
+        "protein": 30.1,
+        "fat": 13.6,
+        "satFat": 1.8,
+        "carbs": 102.3,
+        "sugar": 6.3,
+        "salt": 3.2
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "4",
+        "5",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Putenrahmgeschnetzeltes mit Waldpilzen und Semmelknödel",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.3,
+        "staff": 7.7,
+        "guest": 10.1
+       },
+       "nutrition": {
+        "kcal": 529.0,
+        "protein": 53.4,
+        "fat": 14.9,
+        "satFat": 4.8,
+        "carbs": 41.0,
+        "sugar": 9.2,
+        "salt": 4.0
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "14",
+        "24",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Bayrische Creme mit Mandarinen",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 274.0,
+        "protein": 3.4,
+        "fat": 21.2,
+        "satFat": 13.1,
+        "carbs": 17.6,
+        "sugar": 15.7,
+        "salt": 0.1
+       },
+       "tags": [],
+       "allergens": [
+        "18R",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Cheescake Dessert mit Oreo-Brösel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 677.0,
+        "protein": 12.6,
+        "fat": 27.4,
+        "satFat": 10.9,
+        "carbs": 92.2,
+        "sugar": 57.4,
+        "salt": 0.9
+       },
+       "tags": [],
+       "allergens": [
+        "14",
+        "18R",
+        "23",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Grüne Nudeln mit veganem Hähnchen und Schwarzwurzeln in Senf-Soße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.15,
+        "staff": 6.05,
+        "guest": 7.9
+       },
+       "nutrition": {
+        "kcal": 712.0,
+        "protein": 36.2,
+        "fat": 14.8,
+        "satFat": 2.4,
+        "carbs": 98.7,
+        "sugar": 6.9,
+        "salt": 1.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "11",
+        "23",
+        "27",
+        "29",
+        "30",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Gnocchi mit Spitzkohl und zweierlei Möhren",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.5,
+        "staff": 5.1,
+        "guest": 6.65
+       },
+       "nutrition": {
+        "kcal": 579.0,
+        "protein": 12.0,
+        "fat": 20.1,
+        "satFat": 9.8,
+        "carbs": 84.1,
+        "sugar": 14.3,
+        "salt": 2.9
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Gebackenes Schollenfilet mit Kräuter-Mayonnaise, Salzkartoffeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 5.6,
+        "staff": 8.15,
+        "guest": 10.65
+       },
+       "nutrition": {
+        "kcal": 1175.0,
+        "protein": 32.0,
+        "fat": 82.7,
+        "satFat": 6.9,
+        "carbs": 75.0,
+        "sugar": 7.1,
+        "salt": 3.8
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": [
+        "1",
+        "3",
+        "5",
+        "14",
+        "24",
+        "27",
+        "30",
+        "35",
+        "34W"
+       ]
+      },
+      {
+       "category": "Specials",
+       "name": "Currywurst Pommes",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.5,
+        "staff": 6.55,
+        "guest": 8.55
+       },
+       "nutrition": {
+        "kcal": 1281.0,
+        "protein": 31.2,
+        "fat": 82.4,
+        "satFat": 17.6,
+        "carbs": 99.6,
+        "sugar": 17.0,
+        "salt": 6.5
+       },
+       "tags": [
+        "Schwein",
+        "Rind"
+       ],
+       "allergens": [
+        "1",
+        "2",
+        "3",
+        "8",
+        "9"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mousse au Chokolate mit Schokostreusel, vegan",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 188.0,
+        "protein": 2.5,
+        "fat": 8.0,
+        "satFat": 5.6,
+        "carbs": 24.9,
+        "sugar": 19.8,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Grießpudding mit Mandelsplitter",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 250.0,
+        "protein": 6.7,
+        "fat": 13.4,
+        "satFat": 5.8,
+        "carbs": 24.7,
+        "sugar": 18.6,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W",
+        "25Mn"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-04",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Indisches Kürbis-Curry mit Basmatireis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.85,
+        "staff": 5.6,
+        "guest": 7.35
+       },
+       "nutrition": {
+        "kcal": 646.0,
+        "protein": 13.1,
+        "fat": 66.7,
+        "satFat": 12.3,
+        "carbs": 89.9,
+        "sugar": 10.2,
+        "salt": 2.7
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "28"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Pastinaken-Steckrüben-Rösti mit Erbsen-Karotten-Rahmgemüse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.5,
+        "staff": 6.55,
+        "guest": 8.55
+       },
+       "nutrition": {
+        "kcal": 879.0,
+        "protein": 19.9,
+        "fat": 54.6,
+        "satFat": 10.9,
+        "carbs": 72.1,
+        "sugar": 16.5,
+        "salt": 4.5
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "3",
+        "14",
+        "24",
+        "34W",
+        "34H"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Schweineschnitzel mit Pommes frites",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.9,
+        "staff": 7.15,
+        "guest": 9.35
+       },
+       "nutrition": {
+        "kcal": 1024.0,
+        "protein": 40.8,
+        "fat": 55.4,
+        "satFat": 6.0,
+        "carbs": 88.8,
+        "sugar": 4.1,
+        "salt": 1.6
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "3",
+        "14",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Zitronenquark mit Knuspermüsli",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 212.0,
+        "protein": 11.9,
+        "fat": 4.9,
+        "satFat": 2.2,
+        "carbs": 27.7,
+        "sugar": 19.2,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W",
+        "34G",
+        "34H"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
     }
    ]
   },
@@ -1400,7 +2211,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Pasta mit Lachs-Sahnesoße",
-       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
+       "info": "",
        "kind": "main",
        "prices": {
         "student": 5.05,
@@ -1557,7 +2368,7 @@
       {
        "category": "Fleisch + Fisch",
        "name": "Hähnchenschnitzel im Kürbiskernmantel mit Kartoffelwedges",
-       "info": "Bestellen Sie hier",
+       "info": "Vorbestellung ist bis 9.00 Uhr möglich",
        "kind": "main",
        "prices": {
         "student": 4.95,
@@ -1624,12 +2435,792 @@
        "allergens": []
       }
      ]
+    },
+    {
+     "date": "2026-11-30",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Tikka Masala mit veganem Hähnchen und Fladenbrot",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.65,
+        "staff": 6.75,
+        "guest": 8.85
+       },
+       "nutrition": {
+        "kcal": 819.0,
+        "protein": 34.5,
+        "fat": 32.3,
+        "satFat": 9.8,
+        "carbs": 90.5,
+        "sugar": 13.0,
+        "salt": 5.8
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "27",
+        "28",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Kartoffelgratin Elsässer Art mit Lauch und Zwiebeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.0,
+        "staff": 5.8,
+        "guest": 7.6
+       },
+       "nutrition": {
+        "kcal": 664.0,
+        "protein": 21.2,
+        "fat": 40.1,
+        "satFat": 18.3,
+        "carbs": 49.8,
+        "sugar": 9.5,
+        "salt": 4.9
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "14",
+        "24"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Geröstete Maultaschen mit Ei und Gemüse",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 4.8,
+        "staff": 7.0,
+        "guest": 9.15
+       },
+       "nutrition": {
+        "kcal": 808.0,
+        "protein": 32.5,
+        "fat": 39.8,
+        "satFat": 12.2,
+        "carbs": 77.7,
+        "sugar": 13.1,
+        "salt": 6.3
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "4",
+        "14",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Vegane Schokocreme mit Birnen",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 213.0,
+        "protein": 1.6,
+        "fat": 13.4,
+        "satFat": 8.8,
+        "carbs": 20.8,
+        "sugar": 14.2,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Kirschjoghurt mit Schokostreusel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 171.0,
+        "protein": 5.8,
+        "fat": 5.5,
+        "satFat": 4.0,
+        "carbs": 23.5,
+        "sugar": 22.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-01",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Schupfnudeln mit Brokkoli-Gemüse, geräuchertem Tofu und Mandeln",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.9,
+        "staff": 5.7,
+        "guest": 7.45
+       },
+       "nutrition": {
+        "kcal": 881.0,
+        "protein": 26.7,
+        "fat": 36.5,
+        "satFat": 5.3,
+        "carbs": 103.7,
+        "sugar": 18.0,
+        "salt": 2.4
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "23",
+        "34W",
+        "25Mn"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Linguine mit winterlichen buntem Gemüse und pikanter Soße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.35,
+        "staff": 4.9,
+        "guest": 6.4
+       },
+       "nutrition": {
+        "kcal": 413.0,
+        "protein": 14.1,
+        "fat": 12.4,
+        "satFat": 2.1,
+        "carbs": 32.4,
+        "sugar": 17.4,
+        "salt": 1.4
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "22",
+        "23",
+        "28",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Kohlroulade mit Speck-Rahmsoße, Petersilienkartoffeln",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 4.8,
+        "staff": 7.0,
+        "guest": 9.15
+       },
+       "nutrition": {
+        "kcal": 666.0,
+        "protein": 13.7,
+        "fat": 409.4,
+        "satFat": 34.6,
+        "carbs": 46.9,
+        "sugar": 16.7,
+        "salt": 7.1
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "2",
+        "3",
+        "8",
+        "14",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Milchreis mit Pflaumenkompott",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 162.0,
+        "protein": 3.9,
+        "fat": 1.6,
+        "satFat": 1.0,
+        "carbs": 32.2,
+        "sugar": 19.4,
+        "salt": 0.2
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Brombeerquark",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 45.0,
+        "protein": 0.9,
+        "fat": 0.9,
+        "satFat": 0.5,
+        "carbs": 7.4,
+        "sugar": 7.4,
+        "salt": 0.0
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-02",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Marokkanisches Ofengemüse mit veganem Dip, dazu Couscous und Zitronengarnitur",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.25,
+        "staff": 6.2,
+        "guest": 8.1
+       },
+       "nutrition": {
+        "kcal": 717.0,
+        "protein": 15.3,
+        "fat": 86.1,
+        "satFat": 2.8,
+        "carbs": 81.3,
+        "sugar": 23.8,
+        "salt": 4.2
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "27",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Linsen mit Spätzle",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.25,
+        "staff": 4.75,
+        "guest": 6.2
+       },
+       "nutrition": {
+        "kcal": 693.0,
+        "protein": 30.9,
+        "fat": 17.5,
+        "satFat": 2.7,
+        "carbs": 97.5,
+        "sugar": 10.1,
+        "salt": 5.6
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "1",
+        "4",
+        "5",
+        "14",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Putenrahmgeschnetzeltes mit Waldpilzen und Semmelknödel",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.3,
+        "staff": 7.7,
+        "guest": 10.1
+       },
+       "nutrition": {
+        "kcal": 529.0,
+        "protein": 53.4,
+        "fat": 14.9,
+        "satFat": 4.8,
+        "carbs": 41.0,
+        "sugar": 9.2,
+        "salt": 4.0
+       },
+       "tags": [
+        "Geflügel"
+       ],
+       "allergens": [
+        "14",
+        "24",
+        "26",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Bayrische Creme mit Mandarinen",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 274.0,
+        "protein": 3.4,
+        "fat": 21.2,
+        "satFat": 13.1,
+        "carbs": 17.6,
+        "sugar": 15.7,
+        "salt": 0.1
+       },
+       "tags": [],
+       "allergens": [
+        "18R",
+        "24"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Cheescake Dessert mit Oreo-Brösel",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 677.0,
+        "protein": 12.6,
+        "fat": 27.4,
+        "satFat": 10.9,
+        "carbs": 92.2,
+        "sugar": 57.4,
+        "salt": 0.9
+       },
+       "tags": [],
+       "allergens": [
+        "14",
+        "18R",
+        "23",
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-03",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Grüne Nudeln mit veganem Hähnchen und Schwarzwurzeln in Senf-Soße",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.15,
+        "staff": 6.05,
+        "guest": 7.9
+       },
+       "nutrition": {
+        "kcal": 715.0,
+        "protein": 36.3,
+        "fat": 14.8,
+        "satFat": 2.4,
+        "carbs": 99.2,
+        "sugar": 6.9,
+        "salt": 1.5
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "11",
+        "23",
+        "27",
+        "29",
+        "30",
+        "34W"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Gnocchi mit Spitzkohl und zweierlei Möhren",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.5,
+        "staff": 5.1,
+        "guest": 6.65
+       },
+       "nutrition": {
+        "kcal": 575.0,
+        "protein": 11.9,
+        "fat": 19.9,
+        "satFat": 9.8,
+        "carbs": 83.7,
+        "sugar": 14.1,
+        "salt": 2.8
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Gebackenes Schollenfilet mit Kräuter-Mayonnaise, Salzkartoffeln",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 5.6,
+        "staff": 8.15,
+        "guest": 10.65
+       },
+       "nutrition": {
+        "kcal": 1175.0,
+        "protein": 32.0,
+        "fat": 82.7,
+        "satFat": 6.9,
+        "carbs": 75.0,
+        "sugar": 7.1,
+        "salt": 3.8
+       },
+       "tags": [
+        "Fisch"
+       ],
+       "allergens": [
+        "1",
+        "3",
+        "5",
+        "14",
+        "24",
+        "27",
+        "30",
+        "35",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Mousse au Chokolate mit Schokostreusel, vegan",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 188.0,
+        "protein": 2.5,
+        "fat": 8.0,
+        "satFat": 5.6,
+        "carbs": 24.9,
+        "sugar": 19.8,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "34H"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Grießpudding mit Mandelsplitter",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.0,
+        "staff": 1.45,
+        "guest": 1.9
+       },
+       "nutrition": {
+        "kcal": 250.0,
+        "protein": 6.7,
+        "fat": 13.4,
+        "satFat": 5.8,
+        "carbs": 24.7,
+        "sugar": 18.6,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W",
+        "25Mn"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
+    },
+    {
+     "date": "2026-12-04",
+     "items": [
+      {
+       "category": "Vegan",
+       "name": "Indisches Kürbis-Curry mit Basmatireis",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 3.85,
+        "staff": 5.6,
+        "guest": 7.35
+       },
+       "nutrition": {
+        "kcal": 655.0,
+        "protein": 13.5,
+        "fat": 67.0,
+        "satFat": 12.4,
+        "carbs": 90.9,
+        "sugar": 9.7,
+        "salt": 2.7
+       },
+       "tags": [
+        "vegan",
+        "vegetarisch"
+       ],
+       "allergens": [
+        "28"
+       ]
+      },
+      {
+       "category": "Vegetarisch",
+       "name": "Pastinaken-Steckrüben-Rösti mit Erbsen-Karotten-Rahmgemüse",
+       "info": "",
+       "kind": "main",
+       "prices": {
+        "student": 4.5,
+        "staff": 6.55,
+        "guest": 8.55
+       },
+       "nutrition": {
+        "kcal": 879.0,
+        "protein": 19.9,
+        "fat": 54.6,
+        "satFat": 10.9,
+        "carbs": 72.1,
+        "sugar": 16.5,
+        "salt": 4.5
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "3",
+        "14",
+        "24",
+        "34W",
+        "34H"
+       ]
+      },
+      {
+       "category": "Fleisch + Fisch",
+       "name": "Schweineschnitzel mit Pommes frites",
+       "info": "Bestellen Sie hier",
+       "kind": "main",
+       "prices": {
+        "student": 4.9,
+        "staff": 7.15,
+        "guest": 9.35
+       },
+       "nutrition": {
+        "kcal": 1024.0,
+        "protein": 40.8,
+        "fat": 55.4,
+        "satFat": 6.0,
+        "carbs": 88.8,
+        "sugar": 4.1,
+        "salt": 1.6
+       },
+       "tags": [
+        "Schwein"
+       ],
+       "allergens": [
+        "3",
+        "14",
+        "34W"
+       ]
+      },
+      {
+       "category": "Dessert",
+       "name": "Zitronenquark mit Knuspermüsli",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": 1.2,
+        "staff": 1.75,
+        "guest": 2.3
+       },
+       "nutrition": {
+        "kcal": 212.0,
+        "protein": 11.9,
+        "fat": 4.9,
+        "satFat": 2.2,
+        "carbs": 27.7,
+        "sugar": 19.2,
+        "salt": 0.1
+       },
+       "tags": [
+        "vegetarisch"
+       ],
+       "allergens": [
+        "24",
+        "34W",
+        "34G",
+        "34H"
+       ]
+      },
+      {
+       "category": "BEILAGEN / TAGESSALAT / TAGESGEMüSE",
+       "name": "siehe Auswahl vor Ort",
+       "info": "",
+       "kind": "side",
+       "prices": {
+        "student": null,
+        "staff": null,
+        "guest": null
+       },
+       "nutrition": null,
+       "tags": [],
+       "allergens": []
+      }
+     ]
     }
    ]
   }
  ],
  "stats": {
-  "items": 61,
+  "items": 120,
   "errors": 0
  }
 }
